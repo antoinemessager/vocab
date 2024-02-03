@@ -1,4 +1,11 @@
 from functions import *
+
+def traduction():
+    st.session_state.i=i
+
+def reset():
+    if 'i' in st.session_state:
+      del st.session_state.i
   
 data=get_data('select * from ES.nouns')
 
@@ -11,16 +18,12 @@ es=data['es_noun'].values[i]
 fr=data['fr_noun'].values[i]
 st.write(fr)
 
-def traduction():
-    st.session_state.i=i
-
 st.button('Traduction', on_click=traduction)
 
 if "i" in st.session_state:
     st.write(es)
 
-def reset():
-    del st.session_state.i
+
 st.button('reset', on_click=reset)
 
 
