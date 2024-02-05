@@ -1,1 +1,6 @@
 pymysql
+tqdm
+datetime
+time
+pandas
+numpy
