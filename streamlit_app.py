@@ -2,6 +2,7 @@ from functions import *
 
 if 'user' not in st.session_state:
     user_df=get_data('select * from users')
+    user_df
     user_list=['please select']+user_df.user_name.unique().tolist()+['new']
     user_name=st.selectbox('Who are you?',user_list)
     if user_name != 'please select':
