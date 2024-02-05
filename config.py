@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import time
+import tqdm
 from tqdm import tqdm
 import datetime
 
