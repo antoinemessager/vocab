@@ -67,15 +67,14 @@ else:
 
   st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
   st.markdown(f"<b class='big-font'>[{word_fr}] </b><text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
-  col1, col2, col3, col4 = st.columns(4) 
+  col1, col2 = st.columns(2) 
   with col1:
     st.button(label='unknown',on_click=unknown)
+    st.button(label='too easy',on_click=too_easy)
   with col2:
     st.button(label='known',on_click=known)
-  with col3:
-    st.button(label='too easy',on_click=too_easy)
-  with col4:
     st.button(label='reveal',on_click=reveal)
+    
 
   if st.session_state.reveal:
     st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
