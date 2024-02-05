@@ -17,12 +17,12 @@ for l in f:
     i+=1
     if i < 1997:
         r=int(l.split('.')[0])
-        fr=l.split('.')[1].split('–')[0]
+        fr=l.split('.')[1].split('-')[0]
         if fr[0] == ' ':
             fr=fr[1:]
         if fr[-1] == ' ':
             fr=fr[:-1]
-        es=l.split('.')[1].split('–')[1][:-1]
+        es=l.split('.')[1].split('-')[1][:-1]
         if es[0] == ' ':
             es=es[1:]
         if es[-1] == ' ':
