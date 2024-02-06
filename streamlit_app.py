@@ -88,8 +88,8 @@ else:
         min-width: calc(33% - 1rem) !important;
     }
     </style>''', unsafe_allow_html=True)
-    st.button(label='unknown',on_click=unknown,type='primary')
-    st.button(label='too easy',on_click=too_easy,type='primary')
+    st.button(label='unknown',on_click=unknown)
+    st.button(label='too easy',on_click=too_easy)
   with col2:
     st.write('''<style>
     [data-testid="column"] {
@@ -98,8 +98,8 @@ else:
         min-width: calc(33% - 1rem) !important;
     }
     </style>''', unsafe_allow_html=True)
-    st.button(label='known',on_click=known,type='primary')
-    st.button(label='reveal',on_click=reveal,type='primary')
+    st.button(label='known',on_click=known)
+    st.button(label='reveal',on_click=reveal)
     
   if st.session_state.reveal:
     st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
