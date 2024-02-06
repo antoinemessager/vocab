@@ -97,10 +97,16 @@ else:
 
   st.write('''<style>
   button[kind="primary"] {
-      width: calc(35% - 1rem) !important;
-      flex: 1 1 calc(35% - 1rem) !important;
-      min-width: calc(35% - 1rem) !important;
-      color: white;
+      width: calc(33% - 1rem) !important;
+      flex: 1 1 calc(33% - 1rem) !important;
+      min-width: calc(33% - 1rem) !important;
+      background-color: white;
+      color: black;
+      border-color: grey;
+  }
+  button[kind="primary"]:hover {
+    color: red;
+    border-color: red;
+    background-color: white;
   }
   </style>''', unsafe_allow_html=True)
-  st.button(label='test',type='primary')
