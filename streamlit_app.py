@@ -74,7 +74,7 @@ else:
 
   st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
   st.markdown(f"<b class='big-font'>[{word_fr}] </b><text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
-  col1, col2 = st.columns([1,5]) 
+  col1, col2 = st.columns(2) 
   with col1:
     st.button(label='unknown',on_click=unknown)
     st.button(label='too easy',on_click=too_easy)
@@ -87,7 +87,7 @@ else:
     st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
   else:
     st.markdown("""<style>.big-white-font {font-size:30px;color:white}</style>""", unsafe_allow_html=True)
-    st.markdown(f"<b class='big-white-font'>[{' '*len(word_es)}] </b><text class='big-white-font'>{' '*len(sentence_es)}</text>", unsafe_allow_html=True)
+    st.markdown(f"<b class='big-white-font'>[{'?'*len(word_es)}] </b><text class='big-white-font'>{' '*len(sentence_es)}</text>", unsafe_allow_html=True)
 
   
   progress=int(st.session_state.known_words/4999*100)
