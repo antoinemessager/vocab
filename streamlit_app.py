@@ -97,9 +97,9 @@ else:
 
   st.write('''<style>
   button[kind="primary"] {
-      width: calc(33% - 1rem) !important;
-      flex: 1 1 calc(33% - 1rem) !important;
-      min-width: calc(33% - 1rem) !important;
+      width: calc(10% - 1rem) !important;
+      flex: 1 1 calc(10% - 1rem) !important;
+      min-width: calc(10% - 1rem) !important;
       background-color: white;
       color: black;
       border-color: grey;
