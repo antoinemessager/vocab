@@ -74,13 +74,28 @@ else:
 
   st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
   st.markdown(f"<b class='big-font'>[{word_fr}] </b><text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
+  
   col1, col2 = st.columns(2) 
   with col1:
-    st.button(label='unknown',on_click=unknown,type='primary')
-    st.button(label='too easy',on_click=too_easy,type='primary')
+    st.write('''<style>
+    [data-testid="column"] {
+        width: calc(33.3333% - 1rem) !important;
+        flex: 1 1 calc(33.3333% - 1rem) !important;
+        min-width: calc(33% - 1rem) !important;
+    }
+    </style>''', unsafe_allow_html=True)
+    st.button(label='unknown',on_click=unknown)
+    st.button(label='too easy',on_click=too_easy)
   with col2:
-    st.button(label='known',on_click=known,type='primary')
-    st.button(label='reveal',on_click=reveal,type='primary')
+    st.write('''<style>
+    [data-testid="column"] {
+        width: calc(33.3333% - 1rem) !important;
+        flex: 1 1 calc(33.3333% - 1rem) !important;
+        min-width: calc(33% - 1rem) !important;
+    }
+    </style>''', unsafe_allow_html=True)
+    st.button(label='known',on_click=known)
+    st.button(label='reveal',on_click=reveal)
     
 
   if st.session_state.reveal:
@@ -97,9 +112,9 @@ else:
 
   st.write('''<style>
   button[kind="primary"] {
-      width: calc(10% - 1rem) !important;
-      flex: 1 1 calc(10% - 1rem) !important;
-      min-width: calc(10% - 1rem) !important;
+      width: calc(33% - 1rem) !important;
+      flex: 1 1 calc(33% - 1rem) !important;
+      min-width: calc(33% - 1rem) !important;
       background-color: white;
       color: black;
       border-color: grey;
@@ -110,3 +125,5 @@ else:
     background-color: white;
   }
   </style>''', unsafe_allow_html=True)
+
+  
