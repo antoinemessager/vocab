@@ -87,7 +87,7 @@ else:
     st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
   else:
     st.markdown("""<style>.big-white-font {font-size:30px;color:white}</style>""", unsafe_allow_html=True)
-    st.markdown(f"<b class='big-white-font'>[{'?'*len(word_es)}] </b><text class='big-white-font'>{' '*len(sentence_es)}</text>", unsafe_allow_html=True)
+    st.markdown(f"<b class='big-white-font'>[{'?'*len(word_es)}] </b><text class='big-white-font'>{'?'*len(sentence_es)}</text>", unsafe_allow_html=True)
 
   
   progress=int(st.session_state.known_words/4999*100)
