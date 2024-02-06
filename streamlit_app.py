@@ -37,7 +37,7 @@ else:
   user_name=st.session_state.user
   user_id=st.session_state.user_id
   verbose=True
-  working_set_size=20
+  working_set_size=30
   st.session_state.known_threshold=5
 
   if 'df_words' not in st.session_state:
@@ -51,23 +51,30 @@ else:
   st.session_state.df_unknown_words=st.session_state.df_words
   if st.session_state.df_known_words.shape[0]>0:
     st.session_state.df_unknown_words=st.session_state.df_words[~st.session_state.df_words['word_id'].isin(st.session_state.df_known_words.word_id.tolist())].sort_values('word_id').reset_index(drop=True)
+  df_local_unknown=st.session_state.df_unknown_words.head(working_set_size)
 
   if 'i' not in st.session_state: 
-    st.session_state.i=np.random.choice(range(working_set_size))
+    dt=0
     st.session_state.reveal=False
+    while dt < 120:
+      st.session_state.i=np.random.choice(range(working_set_size))
+      word_id=df_local_unknown.word_id.values[int(st.session_state.i)]
+      df=st.session_state.df_history
+      ts_max=df[df.word_id==word_id].ts.max()
+      dt=(datetime.datetime.now()-ts_max).seconds
 
   i=int(st.session_state.i)
-  word_id=st.session_state.df_unknown_words.word_id.values[i]
+  word_id=df_local_unknown.word_id.values[i]
+  word_fr=df_local_unknown.fr_word.values[i]
+  sentence_fr=df_local_unknown.fr_sentence.values[i]
+  word_es=df_local_unknown.es_word.values[i]
+  sentence_es=df_local_unknown.es_sentence.values[i]
   st.session_state.word_id=word_id
-  word_fr=st.session_state.df_unknown_words.fr_word.values[i]
-  sentence_fr=st.session_state.df_unknown_words.fr_sentence.values[i]
-  word_es=st.session_state.df_unknown_words.es_word.values[i]
-  sentence_es=st.session_state.df_unknown_words.es_sentence.values[i]
 
 
   st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
   st.markdown(f"<b class='big-font'>[{word_fr}] </b><text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
-  col1, col2 = st.columns(2) 
+  col1, col2 = st.columns([1,5]) 
   with col1:
     st.button(label='unknown',on_click=unknown)
     st.button(label='too easy',on_click=too_easy)
@@ -80,7 +87,7 @@ else:
     st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
   else:
     st.markdown("""<style>.big-white-font {font-size:30px;color:white}</style>""", unsafe_allow_html=True)
-    st.markdown(f"<b class='big-white-font'>[{word_es}] </b><text class='big-white-font'>{sentence_es}</text>", unsafe_allow_html=True)
+    st.markdown(f"<b class='big-white-font'>[{' '*len(word_es)}] </b><text class='big-white-font'>{' '*len(sentence_es)}</text>", unsafe_allow_html=True)
 
   
   progress=int(st.session_state.known_words/4999*100)

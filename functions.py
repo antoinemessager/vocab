@@ -48,27 +48,6 @@ def get_data(query):
     except Exception as e:
         print(f'Error {e}')
 
-@st.cache_data 
-def load_data(table_name,verbose=False):
-    t0=datetime.datetime.utcnow()
-    df = get_data(f'select * from {table_name}')
-    t1=datetime.datetime.utcnow()  
-    dt=(t1-t0).seconds+(t1-t0).microseconds/1e6
-    if verbose:
-        st.write(f"[timing][{get_str_time()}] loading {table_name} {dt:.2f}s elapsed")
-    return df
-
-
-def get_str_time(date=''):
-    '''
-    if no date given, it returns the current utc date rounded to the second
-    otherwise, it outputs the rounded date
-    '''
-    if date == '':
-        date=datetime.datetime.now()
-    date=pd.to_datetime(date)
-    return date.strftime("%Y-%m-%d %H:%M:%S")
-
 def reveal():
     st.session_state.reveal=True
 
@@ -99,7 +78,7 @@ def known():
     if df[df.word_id==st.session_state.word_id].success.sum()>=st.session_state.known_threshold:
       run(f"INSERT INTO known_words_user_{st.session_state.user_id} (word_id, ts) VALUES ({st.session_state.word_id},'{ts}')")
       new_df=pd.DataFrame({
-        'word_id':[st.session_state.ord_id],
+        'word_id':[st.session_state.word_id],
         'ts':[ts]
       })
       st.session_state.df_known_words=pd.concat([st.session_state.df_known_words,new_df]).copy()
