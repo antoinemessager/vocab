@@ -1,5 +1,7 @@
 from functions import *
 
+st_theme = st_javascript("""window.getComputedStyle(window.parent.document.getElementsByClassName("stApp")[0]).getPropertyValue("color-scheme")""")
+
 if 'user' not in st.session_state:
     user_df=get_data('select * from users')
     user_list=['please select']+user_df.user_name.unique().tolist()+['new']
@@ -40,6 +42,7 @@ else:
   working_set_size=30
   st.session_state.known_threshold=5
 
+
   if 'df_words' not in st.session_state:
     st.write(f'Hello {user_name}!')
     st.session_state.df_words=get_data('select * from es_fr_words')#load_data(table_name='es_fr_words',verbose=verbose)
@@ -47,6 +50,7 @@ else:
     st.session_state.df_history=get_data(f'select * from history_user_{user_id}')#load_data(table_name=f'history_user_{user_id}',verbose=verbose)
     st.session_state.known_words=st.session_state.df_known_words.shape[0]
     st.rerun()
+    
   
   st.session_state.df_unknown_words=st.session_state.df_words
   if st.session_state.df_known_words.shape[0]>0:
@@ -84,8 +88,8 @@ else:
         min-width: calc(33% - 1rem) !important;
     }
     </style>''', unsafe_allow_html=True)
-    st.button(label='unknown',on_click=unknown)
-    st.button(label='too easy',on_click=too_easy)
+    st.button(label='unknown',on_click=unknown,type='primary')
+    st.button(label='too easy',on_click=too_easy,type='primary')
   with col2:
     st.write('''<style>
     [data-testid="column"] {
@@ -94,17 +98,20 @@ else:
         min-width: calc(33% - 1rem) !important;
     }
     </style>''', unsafe_allow_html=True)
-    st.button(label='known',on_click=known)
-    st.button(label='reveal',on_click=reveal)
+    st.button(label='known',on_click=known,type='primary')
+    st.button(label='reveal',on_click=reveal,type='primary')
     
-
   if st.session_state.reveal:
     st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
   else:
-    st.markdown("""<style>.big-white-font {font-size:30px;color:white}</style>""", unsafe_allow_html=True)
+    if st_theme == 'light':
+      st.markdown("""<style>.big-white-font {font-size:30px;color:white}</style>""", unsafe_allow_html=True)
+    if st_theme == 'dark':
+      st.markdown("""<style>.big-white-font {font-size:30px;color:#0e1117}</style>""", unsafe_allow_html=True)
     st.markdown(f"<b class='big-white-font'>[{word_es}] </b><text class='big-white-font'>{sentence_es}</text>", unsafe_allow_html=True)
 
-  
+
+
   progress=int(st.session_state.known_words/4999*100)
   progress_text = f"{st.session_state.known_words} words out of 4999"
   my_bar = st.progress(progress,text=progress_text)
