@@ -37,7 +37,6 @@ else:
   st.session_state.number_box=5
   dict_level_to_dt_sec={0:0,1:30,2:120,3:600,4:3600*24,5:3600*24*3,6:3600*24*7,7:3600*24*30}
 
-
   if 'df_words' not in st.session_state:
     st.write(f'Hello {user_name}! Loading data...')
     st.session_state.df_words=get_data('select * from es_fr_words')
@@ -49,25 +48,26 @@ else:
   df_current_box=pd.DataFrame({'word_id':[],'box_level':[],'ts':[]})
   if df_box.shape[0]>0:
     df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
-
-  nb_level_0=(df_current_box.box_level<=1).sum()
-  if nb_level_0<=working_set_size:
-    new_word_id=df_words[~df_words.word_id.isin(df_current_box.word_id.tolist())].sort_values('word_id').head(working_set_size-nb_level_0).word_id.tolist()
-    df_new_box=pd.DataFrame({
-      'word_id':new_word_id,
-      'box_level':[0]*len(new_word_id),
-      'ts':[datetime.datetime.utcnow()]*len(new_word_id),
-    })
-    df_box=pd.concat([df_box,df_new_box])
-    df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
-    st.session_state.df_box=df_box.copy()
-    append_dataframe_to_mysql(df_new_box,f'history_user_{user_id}')
-
-  df_current_box['dt']=df_current_box['box_level'].map(dict_level_to_dt_sec)
-  df_current_box['min_ts']=pd.to_datetime(pd.to_datetime(df_current_box['ts']).astype(int).div(1e9)+df_current_box['dt'],unit='s')
-  df_unknown=df_current_box[df_current_box.min_ts<=pd.to_datetime(datetime.datetime.utcnow())]
-
   if 'word_id' not in st.session_state: 
+
+    nb_level_0=(df_current_box.box_level<=1).sum()
+    if nb_level_0<=working_set_size:
+      new_word_id=df_words[~df_words.word_id.isin(df_current_box.word_id.tolist())].sort_values('word_id').head(working_set_size-nb_level_0).word_id.tolist()
+      df_new_box=pd.DataFrame({
+        'word_id':new_word_id,
+        'box_level':[0]*len(new_word_id),
+        'ts':[datetime.datetime.utcnow()]*len(new_word_id),
+      })
+      df_box=pd.concat([df_box,df_new_box])
+      df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
+      st.session_state.df_box=df_box.copy()
+      append_dataframe_to_mysql(df_new_box,f'history_user_{user_id}')
+
+    df_current_box['dt']=df_current_box['box_level'].map(dict_level_to_dt_sec)
+    df_current_box['min_ts']=pd.to_datetime(pd.to_datetime(df_current_box['ts']).astype(int).div(1e9)+df_current_box['dt'],unit='s')
+    df_unknown=df_current_box[df_current_box.min_ts<=pd.to_datetime(datetime.datetime.utcnow())]
+
+  
     st.session_state.reveal=False
     word_id=int(df_unknown.word_id.sample(1).values[0])
     st.session_state.word_id=word_id
