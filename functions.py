@@ -48,9 +48,6 @@ def get_data(query):
     except Exception as e:
         print(f'Error {e}')
 
-import pandas as pd
-import mysql.connector
-
 def append_dataframe_to_mysql(dataframe, table_name):
     # Établir la connexion à la base de données MySQL
     connection = pymysql.connect(
