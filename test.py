@@ -14,16 +14,21 @@ if reset:
     run(f"""
     CREATE TABLE history_user_{user_id} (
         word_id integer(5) not null, 
-        success bool not null,
-        ts datetime primary key not null
-    )""")
-    run(f'drop table if exists known_words_user_{user_id}')
-    run(f"""
-    CREATE TABLE known_words_user_{user_id} (
-        word_id integer(5) primary key not null, 
-        ts datetime not null
+        box_level integer(5) not null,
+        ts datetime not null,
+        PRIMARY KEY(word_id, ts)
     )""")
     run('show tables')
 else:
-    run('select * from history_user_1')
-    run('select * from known_words_user_1')
+    df=get_data('select * from history_user_1')
+    print(df)
+"""
+1: au hasard parmi tous les elements (max 20 éléments nouveaux)
+2: au moins 2min
+3: au moins 5min
+4: au moins 1j
+5: au moins 3j
+6: au moins 1s
+7: au moins 1mois
+8: succès
+"""

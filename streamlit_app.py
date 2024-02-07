@@ -20,14 +20,9 @@ if 'user' not in st.session_state:
           run(f"""
           CREATE TABLE history_user_{user_id} (
               word_id integer(5) not null, 
-              success bool not null,
-              ts datetime primary key not null
-          )""")
-          run(f'drop table if exists known_words_user_{user_id}')
-          run(f"""
-          CREATE TABLE known_words_user_{user_id} (
-              word_id integer(5) primary key not null, 
-              ts datetime not null
+              box_level integer(5) not null,
+              ts datetime not null,
+              PRIMARY KEY(word_id, ts)
           )""")
           st.rerun()
       else:
@@ -38,43 +33,53 @@ if 'user' not in st.session_state:
 else:
   user_name=st.session_state.user
   user_id=st.session_state.user_id
-  verbose=True
-  working_set_size=30
-  st.session_state.known_threshold=5
+  working_set_size=20
+  st.session_state.number_box=5
+  dict_level_to_dt_sec={0:0,1:30,2:120,3:600,4:3600*24,5:3600*24*3,6:3600*24*7,7:3600*24*30}
 
 
   if 'df_words' not in st.session_state:
-    st.write(f'Hello {user_name}!')
-    st.session_state.df_words=get_data('select * from es_fr_words')#load_data(table_name='es_fr_words',verbose=verbose)
-    st.session_state.df_known_words=get_data(f'select * from known_words_user_{user_id}')#load_data(table_name=f'known_words_user_{user_id}',verbose=verbose)
-    st.session_state.df_history=get_data(f'select * from history_user_{user_id}')#load_data(table_name=f'history_user_{user_id}',verbose=verbose)
-    st.session_state.known_words=st.session_state.df_known_words.shape[0]
+    st.write(f'Hello {user_name}! Loading data...')
+    st.session_state.df_words=get_data('select * from es_fr_words')
+    st.session_state.df_box=get_data(f'select * from history_user_{user_id}')
     st.rerun()
-    
-  
-  st.session_state.df_unknown_words=st.session_state.df_words
-  if st.session_state.df_known_words.shape[0]>0:
-    st.session_state.df_unknown_words=st.session_state.df_words[~st.session_state.df_words['word_id'].isin(st.session_state.df_known_words.word_id.tolist())].sort_values('word_id').reset_index(drop=True)
-  df_local_unknown=st.session_state.df_unknown_words.head(working_set_size)
 
-  if 'i' not in st.session_state: 
-    dt=0
+  df_words=st.session_state.df_words.copy()
+  df_box=st.session_state.df_box.copy()
+  df_current_box=pd.DataFrame({'word_id':[],'box_level':[],'ts':[]})
+  if df_box.shape[0]>0:
+    df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
+
+  nb_level_0=(df_current_box.box_level<=1).sum()
+  if nb_level_0<=working_set_size:
+    new_word_id=df_words[~df_words.word_id.isin(df_current_box.word_id.tolist())].sort_values('word_id').head(working_set_size-nb_level_0).word_id.tolist()
+    df_new_box=pd.DataFrame({
+      'word_id':new_word_id,
+      'box_level':[0]*len(new_word_id),
+      'ts':[datetime.datetime.utcnow()]*len(new_word_id),
+    })
+    df_box=pd.concat([df_box,df_new_box])
+    df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
+    st.session_state.df_box=df_box.copy()
+    append_dataframe_to_mysql(df_new_box,f'history_user_{user_id}')
+
+  df_current_box['dt']=df_current_box['box_level'].map(dict_level_to_dt_sec)
+  df_current_box['min_ts']=pd.to_datetime(pd.to_datetime(df_current_box['ts']).astype(int).div(1e9)+df_current_box['dt'],unit='s')
+  df_unknown=df_current_box[df_current_box.min_ts<=pd.to_datetime(datetime.datetime.utcnow())]
+  st.dataframe(df_unknown)
+
+  if 'word_id' not in st.session_state: 
     st.session_state.reveal=False
-    while dt < 120:
-      st.session_state.i=np.random.choice(range(working_set_size))
-      word_id=df_local_unknown.word_id.values[int(st.session_state.i)]
-      df=st.session_state.df_history
-      ts_max=df[df.word_id==word_id].ts.max()
-      dt=(datetime.datetime.now()-ts_max).seconds
+    word_id=int(df_unknown.word_id.sample(1).values[0])
+    st.session_state.word_id=word_id
+    st.session_state.box_level=df_unknown[df_unknown.word_id==word_id].box_level.values[0]
 
-  i=int(st.session_state.i)
-  word_id=df_local_unknown.word_id.values[i]
-  word_fr=df_local_unknown.fr_word.values[i]
-  sentence_fr=df_local_unknown.fr_sentence.values[i]
-  word_es=df_local_unknown.es_word.values[i]
-  sentence_es=df_local_unknown.es_sentence.values[i]
-  st.session_state.word_id=word_id
-
+  
+  word_id=st.session_state.word_id
+  word_fr=df_words[df_words.word_id==word_id].fr_word.values[0]
+  sentence_fr=df_words[df_words.word_id==word_id].fr_sentence.values[0]
+  word_es=df_words[df_words.word_id==word_id].es_word.values[0]
+  sentence_es=df_words[df_words.word_id==word_id].es_sentence.values[0]
 
   st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
   st.markdown(f"<b class='big-font'>[{word_fr}] </b><text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
@@ -111,26 +116,9 @@ else:
     st.markdown(f"<b class='big-white-font'>[{word_es}] </b><text class='big-white-font'>{sentence_es}</text>", unsafe_allow_html=True)
 
 
-
-  progress=int(st.session_state.known_words/4999*100)
-  progress_text = f"{st.session_state.known_words} words out of 4999"
+  nb_word_learning=int(df_current_box.box_level.sum()/8)
+  progress=int(nb_word_learning/4999*100)
+  progress_text = f"learned {nb_word_learning} words out of 4999"
   my_bar = st.progress(progress,text=progress_text)
-
-
-  st.write('''<style>
-  button[kind="primary"] {
-      width: calc(33% - 1rem) !important;
-      flex: 1 1 calc(33% - 1rem) !important;
-      min-width: calc(33% - 1rem) !important;
-      background-color: white;
-      color: black;
-      border-color: grey;
-  }
-  button[kind="primary"]:hover {
-    color: red;
-    border-color: red;
-    background-color: white;
-  }
-  </style>''', unsafe_allow_html=True)
 
   
