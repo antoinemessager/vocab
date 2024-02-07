@@ -66,7 +66,6 @@ else:
   df_current_box['dt']=df_current_box['box_level'].map(dict_level_to_dt_sec)
   df_current_box['min_ts']=pd.to_datetime(pd.to_datetime(df_current_box['ts']).astype(int).div(1e9)+df_current_box['dt'],unit='s')
   df_unknown=df_current_box[df_current_box.min_ts<=pd.to_datetime(datetime.datetime.utcnow())]
-  st.dataframe(df_unknown)
 
   if 'word_id' not in st.session_state: 
     st.session_state.reveal=False
