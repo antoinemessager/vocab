@@ -124,7 +124,7 @@ def known():
 
 def too_easy():
     ts=datetime.datetime.utcnow()
-    new_level=max(6,st.session_state.box_level+1)
+    new_level=max(5,st.session_state.box_level+1)
     run(f"INSERT INTO history_user_{st.session_state.user_id} (word_id, box_level, ts) VALUES ({st.session_state.word_id}, '{new_level}', '{ts}')")
     new_df=pd.DataFrame({
       'word_id':[st.session_state.word_id],

@@ -35,7 +35,7 @@ else:
   user_id=st.session_state.user_id
   working_set_size=20
   st.session_state.number_box=5
-  dict_level_to_dt_sec={0:0,1:30,2:120,3:600,4:3600*24,5:3600*24*3,6:3600*24*7,7:3600*24*30}
+  dict_level_to_dt_sec={0:0,1:30,2:600,3:3600*24,4:3600*24*7,5:3600*24*30}
 
   if 'df_words' not in st.session_state:
     st.write(f'Hello {user_name}! Loading data...')
@@ -115,9 +115,9 @@ else:
     st.markdown(f"<b class='big-white-font'>[{word_es}] </b><text class='big-white-font'>{sentence_es}</text>", unsafe_allow_html=True)
 
 
-  nb_word_learning=int(df_current_box.box_level.sum()/8)
-  progress=int(nb_word_learning/4999*100)
-  progress_text = f"learned {nb_word_learning} words out of 4999"
+  nb_word_learning=df_current_box.box_level.sum()/6
+  progress=np.round(nb_word_learning/4999*100,1)
+  progress_text = f"learned {nb_word_learning:.1f} words out of 4999"
   my_bar = st.progress(progress,text=progress_text)
 
   
