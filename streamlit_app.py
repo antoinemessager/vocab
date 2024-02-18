@@ -116,7 +116,7 @@ else:
 
 
   nb_word_learning=df_current_box.box_level.sum()/6
-  progress=np.round(nb_word_learning/4999*100,1)
+  progress=int(nb_word_learning/4999*100)
   progress_text = f"learned {nb_word_learning:.1f} words out of 4999"
   my_bar = st.progress(progress,text=progress_text)
 

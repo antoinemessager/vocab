@@ -23,7 +23,7 @@ else:
     df=get_data('select * from history_user_2')
     df=df.groupby('word_id').tail(1)
     print(df)
-    df['box_level']=df['box_level'].replace({7:5,6:4,5:4,4:3,3:2})
+    #df['box_level']=df['box_level'].replace({7:5,6:4,5:4,4:3,3:2})
     df['ts']=datetime.datetime.utcnow()
     print(df)
     append_dataframe_to_mysql(df, 'history_user_2')
