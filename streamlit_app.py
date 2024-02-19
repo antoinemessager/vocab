@@ -49,7 +49,6 @@ else:
   if df_box.shape[0]>0:
     df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
   if 'word_id' not in st.session_state: 
-
     nb_level_0=(df_current_box.box_level<=1).sum()
     if nb_level_0<working_set_size:
       new_word_id=df_words[~df_words.word_id.isin(df_current_box.word_id.tolist())].sort_values('word_id').head(working_set_size-nb_level_0).word_id.tolist()
@@ -122,8 +121,6 @@ else:
 
   if 'to_append' in st.session_state:
     table_name=st.session_state.to_append["table_name"]
-    word_id=st.session_state.to_append["word_id"]
-    box_level=st.session_state.to_append["box_level"]
-    ts=st.session_state.to_append["ts"]
-    run(f"INSERT INTO {table_name} (word_id, box_level, ts) VALUES ({word_id}, '{box_level}', '{ts}')")
+    df=st.session_state.to_append["df"]
+    append_dataframe_to_mysql(df,table_name)
     del st.session_state.to_append

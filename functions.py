@@ -99,15 +99,13 @@ def do_update(box_level):
       'box_level':[box_level],
       'ts':[ts]
     })
+    st.session_state.to_append={
+        'table_name':f'history_user_{st.session_state.user_id}',
+        'df':new_df
+    }
     st.session_state.df_box=pd.concat([st.session_state.df_box,new_df]).copy()
     del st.session_state.word_id
     st.session_state.reveal=False
-    st.session_state.to_append={
-        'table_name':f'history_user_{st.session_state.user_id}',
-        'word_id':st.session_state.word_id,
-        'box_level':box_level,
-        'ts':ts,
-    }
     #run(f"INSERT INTO history_user_{st.session_state.user_id} (word_id, box_level, ts) VALUES ({st.session_state.word_id}, '{box_level}', '{ts}')")
 
 def reveal():
