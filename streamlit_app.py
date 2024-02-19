@@ -51,7 +51,7 @@ else:
   if 'word_id' not in st.session_state: 
 
     nb_level_0=(df_current_box.box_level<=1).sum()
-    if nb_level_0<=working_set_size:
+    if nb_level_0<working_set_size:
       new_word_id=df_words[~df_words.word_id.isin(df_current_box.word_id.tolist())].sort_values('word_id').head(working_set_size-nb_level_0).word_id.tolist()
       df_new_box=pd.DataFrame({
         'word_id':new_word_id,
@@ -120,4 +120,10 @@ else:
   progress_text = f"learned {nb_word_learning:.1f} words out of 4999"
   my_bar = st.progress(progress,text=progress_text)
 
-  
+  if 'to_append' in st.session_state:
+    table_name=st.session_state.to_append["table_name"]
+    word_id=st.session_state.to_append["word_id"]
+    box_level=st.session_state.to_append["box_level"]
+    ts=st.session_state.to_append["ts"]
+    run(f"INSERT INTO {table_name} (word_id, box_level, ts) VALUES ({word_id}, '{box_level}', '{ts}')")
+    del st.session_state.to_append

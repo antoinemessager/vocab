@@ -92,45 +92,37 @@ def append_dataframe_to_mysql(dataframe, table_name):
         cursor.close()
         connection.close()
 
+def do_update(box_level):
+    ts=datetime.datetime.utcnow()
+    new_df=pd.DataFrame({
+      'word_id':[st.session_state.word_id],
+      'box_level':[box_level],
+      'ts':[ts]
+    })
+    st.session_state.df_box=pd.concat([st.session_state.df_box,new_df]).copy()
+    del st.session_state.word_id
+    st.session_state.reveal=False
+    st.session_state.to_append={
+        'table_name':f'history_user_{st.session_state.user_id}',
+        'word_id':st.session_state.word_id,
+        'box_level':box_level,
+        'ts':ts,
+    }
+    #run(f"INSERT INTO history_user_{st.session_state.user_id} (word_id, box_level, ts) VALUES ({st.session_state.word_id}, '{box_level}', '{ts}')")
 
 def reveal():
     st.session_state.reveal=True
 
 def unknown():
-    ts=datetime.datetime.utcnow()
-    run(f"INSERT INTO history_user_{st.session_state.user_id} (word_id, box_level, ts) VALUES ({st.session_state.word_id}, '1', '{ts}')")
-    new_df=pd.DataFrame({
-      'word_id':[st.session_state.word_id],
-      'box_level':[1],
-      'ts':[ts]
-    })
-    st.session_state.df_box=pd.concat([st.session_state.df_box,new_df]).copy()
-    del st.session_state.word_id
-    st.session_state.reveal=False
+    box_level=1
+    do_update(box_level)
+
 
 def known():
-    ts=datetime.datetime.utcnow()
-    new_level=st.session_state.box_level+1
-    run(f"INSERT INTO history_user_{st.session_state.user_id} (word_id, box_level, ts) VALUES ({st.session_state.word_id}, '{new_level}', '{ts}')")
-    new_df=pd.DataFrame({
-      'word_id':[st.session_state.word_id],
-      'box_level':[new_level],
-      'ts':[ts]
-    })
-    st.session_state.df_box=pd.concat([st.session_state.df_box,new_df]).copy()
-    del st.session_state.word_id
-    st.session_state.reveal=False
+    box_level=st.session_state.box_level+1
+    do_update(box_level)
 
 
 def too_easy():
-    ts=datetime.datetime.utcnow()
-    new_level=max(5,st.session_state.box_level+1)
-    run(f"INSERT INTO history_user_{st.session_state.user_id} (word_id, box_level, ts) VALUES ({st.session_state.word_id}, '{new_level}', '{ts}')")
-    new_df=pd.DataFrame({
-      'word_id':[st.session_state.word_id],
-      'box_level':[new_level],
-      'ts':[ts]
-    })
-    st.session_state.df_box=pd.concat([st.session_state.df_box,new_df]).copy()
-    del st.session_state.word_id
-    st.session_state.reveal=False
+    box_level=max(5,st.session_state.box_level+1)
+    do_update(box_level)
