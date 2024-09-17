@@ -4,7 +4,6 @@ st_theme = st_javascript("""window.getComputedStyle(window.parent.document.getEl
 
 if 'user' not in st.session_state:
     user_df=get_data('select * from es_to_en_users')
-    user_df
     user_list=['please select']+user_df.user_name.unique().tolist()+['new']
     user_name=st.selectbox('Who are you?',user_list)
     if user_name != 'please select':
@@ -45,7 +44,10 @@ else:
     st.rerun()
 
   df_words=st.session_state.df_words.copy()
-  df_box=st.session_state.df_box.copy()
+  if st.session_state.df_box is not None:
+    df_box=st.session_state.df_box.copy()
+  else:
+    df_box=pd.DataFrame({'word_id':[],'box_level':[],'ts':[]})
   df_current_box=pd.DataFrame({'word_id':[],'box_level':[],'ts':[]})
   if df_box.shape[0]>0:
     df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
