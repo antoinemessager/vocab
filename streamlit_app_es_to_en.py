@@ -116,8 +116,8 @@ else:
 
 
   nb_word_learning=df_current_box.box_level.sum()/6
-  progress=int(nb_word_learning/231*100)
-  progress_text = f"learned {nb_word_learning:.1f} words out of 231"
+  progress=int(nb_word_learning/df_words.shape[0]*100)
+  progress_text = f"learned {nb_word_learning:.1f} words out of {df_words.shape[0]}"
   my_bar = st.progress(progress,text=progress_text)
 
   if 'to_append' in st.session_state:
