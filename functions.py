@@ -115,11 +115,9 @@ def unknown():
     box_level=1
     do_update(box_level)
 
-
 def known():
     box_level=st.session_state.box_level+1
     do_update(box_level)
-
 
 def too_easy():
     box_level=max(5,st.session_state.box_level+1)
