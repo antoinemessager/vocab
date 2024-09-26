@@ -1,531 +1,531 @@
 rank,word_es,word_en
-1,"Ser (presente)","I am, you are, he is, we are, you are, they are"
-2,"Yo","I"
-3,"Tú","You (singular)"
-4,"Él","He"
-5,"Ella","She"
-6,"Nosotros","We"
-7,"Ellos","They"
-8,"Hola","Hello"
-9,"Adiós","Goodbye"
-10,"Gracias","Thank you"
-11,"Por favor","Please"
-12,"Sí","Yes"
-13,"No","No"
-14,"Tener (presente)","I have, you have, he/she has, we have, you have, they have"
-15,"Libro","Book"
-16,"Casa","House"
-17,"Perro","Dog"
-18,"Gato","Cat"
-19,"Agua","Water"
-20,"Comida","Food"
-21,"Ir (presente)","I go, you go, he/she goes, we go, you go, they go"
-22,"Escuela","School"
-23,"Trabajo","Work"
-24,"Amigo","Friend"
-25,"Familia","Family"
-26,"Yo soy estudiante","I am a student"
-27,"Él tiene un perro","He has a dog"
-28,"Nosotros vamos a la escuela","We go to school"
-29,"Comer (presente)","I eat, you eat, he/she eats, we eat, you eat, they eat"
-30,"Manzana","Apple"
-31,"Pan","Bread"
-32,"Leche","Milk"
-33,"Ella come una manzana","She eats an apple"
-34,"Ellos tienen leche","They have milk"
-35,"Hablar (presente)","I speak, you speak, he/she speaks, we speak, you speak, they speak"
-36,"Inglés","English"
-37,"Español","Spanish"
-38,"Idioma","Language"
-39,"Yo hablo español","I speak Spanish"
-40,"Nosotros aprendemos inglés","We learn English"
-41,"Hacer (presente)","I do/make, you do/make, he/she does/makes, we do/make, you do/make, they do/make"
-42,"Tarea","Homework"
-43,"Ejercicio","Exercise"
-44,"Trabajo","Work (noun)"
-45,"Él hace su tarea","He does his homework"
-46,"Ellas hacen ejercicio","They do exercise"
-47,"Ver (presente)","I see, you see, he/she sees, we see, you see, they see"
-48,"Televisión","Television"
-49,"Película","Movie"
-50,"Nosotros vemos una película","We watch a movie"
-51,"Escribir (presente)","I write, you write, he/she writes, we write, you write, they write"
-52,"Lápiz","Pencil"
-53,"Papel","Paper"
-54,"Carta","Letter"
-55,"Ella escribe una carta","She writes a letter"
-56,"Leer (presente)","I read, you read, he/she reads, we read, you read, they read"
-57,"Revista","Magazine"
-58,"Periódico","Newspaper"
-59,"Ellos leen el periódico","They read the newspaper"
-60,"Jugar (presente)","I play, you play, he/she plays, we play, you play, they play"
-61,"Fútbol","Soccer"
-62,"Baloncesto","Basketball"
-63,"Nosotros jugamos fútbol","We play soccer"
-64,"Comprar (presente)","I buy, you buy, he/she buys, we buy, you buy, they buy"
-65,"Tienda","Store"
-66,"Ropa","Clothes"
-67,"Ella compra ropa nueva","She buys new clothes"
-68,"Vender (presente)","I sell, you sell, he/she sells, we sell, you sell, they sell"
-69,"Carro","Car"
-70,"Bicicleta","Bicycle"
-71,"Él vende su carro viejo","He sells his old car"
-72,"Trabajar (presente)","I work, you work, he/she works, we work, you work, they work"
-73,"Oficina","Office"
-74,"Empresa","Company"
-75,"Ellos trabajan en una oficina grande","They work in a big office"
-76,"Estudiar (presente)","I study, you study, he/she studies, we study, you study, they study"
-77,"Universidad","University"
-78,"Examen","Exam"
-79,"Yo estudio para el examen","I study for the exam"
-80,"Cocinar (presente)","I cook, you cook, he/she cooks, we cook, you cook, they cook"
-81,"Cocina","Kitchen"
-82,"Receta","Recipe"
-83,"Ella cocina una nueva receta","She cooks a new recipe"
-84,"Dormir (presente)","I sleep, you sleep, he/she sleeps, we sleep, you sleep, they sleep"
-85,"Cama","Bed"
-86,"Almohada","Pillow"
-87,"El niño duerme en su cama","The boy sleeps in his bed"
-88,"Caminar (presente)","I walk, you walk, he/she walks, we walk, you walk, they walk"
-89,"Parque","Park"
-90,"Calle","Street"
-91,"Nosotros caminamos en el parque","We walk in the park"
-92,"Correr (presente)","I run, you run, he/she runs, we run, you run, they run"
-93,"Maratón","Marathon"
-94,"Ellos corren un maratón","They run a marathon"
-95,"Nadar (presente)","I swim, you swim, he/she swims, we swim, you swim, they swim"
-96,"Piscina","Pool"
-97,"Playa","Beach"
-98,"Yo nado en la piscina","I swim in the pool"
-99,"Cantar (presente)","I sing, you sing, he/she sings, we sing, you sing, they sing"
-100,"Canción","Song"
-101,"Bailar (presente)","I dance, you dance, he/she dances, we dance, you dance, they dance"
-102,"Música","Music"
-103,"Fiesta","Party"
-104,"Ellos bailan en la fiesta","They dance at the party"
-105,"Escuchar (presente)","I listen, you listen, he/she listens, we listen, you listen, they listen"
-106,"Radio","Radio"
-107,"Ella escucha la radio","She listens to the radio"
-108,"Viajar (presente)","I travel, you travel, he/she travels, we travel, you travel, they travel"
-109,"Avión","Airplane"
-110,"Tren","Train"
-111,"Nosotros viajamos en avión","We travel by plane"
-112,"Conducir (presente)","I drive, you drive, he/she drives, we drive, you drive, they drive"
-113,"Autobús","Bus"
-114,"Taxi","Taxi"
-115,"Él conduce un taxi","He drives a taxi"
-116,"Aprender (presente)","I learn, you learn, he/she learns, we learn, you learn, they learn"
-117,"Lección","Lesson"
-118,"Profesor","Teacher"
-119,"Yo aprendo una nueva lección","I learn a new lesson"
-120,"Enseñar (presente)","I teach, you teach, he/she teaches, we teach, you teach, they teach"
-121,"Clase","Class"
-122,"Estudiante","Student"
-123,"Ella enseña inglés a los estudiantes","She teaches English to the students"
-124,"Vivir (presente)","I live, you live, he/she lives, we live, you live, they live"
-125,"Apartamento","Apartment"
-126,"Ciudad","City"
-127,"Ellos viven en una gran ciudad","They live in a big city"
-128,"Pagar (presente)","I pay, you pay, he/she pays, we pay, you pay, they pay"
-129,"Dinero","Money"
-130,"Cuenta","Bill"
-131,"Nosotros pagamos la cuenta","We pay the bill"
-132,"Llamar (presente)","I call, you call, he/she calls, we call, you call, they call"
-133,"Teléfono","Phone"
-134,"Número","Number"
-135,"Él llama a su amigo","He calls his friend"
-136,"Enviar (presente)","I send, you send, he/she sends, we send, you send, they send"
-137,"Correo electrónico","Email"
-138,"Mensaje","Message"
-139,"Yo envío un correo electrónico","I send an email"
-140,"Recibir (presente)","I receive, you receive, he/she receives, we receive, you receive, they receive"
-141,"Paquete","Package"
-142,"Regalo","Gift"
-143,"Ella recibe un regalo","She receives a gift"
-144,"Abrir (presente)","I open, you open, he/she opens, we open, you open, they open"
-145,"Puerta","Door"
-146,"Ventana","Window"
-147,"Ellos abren las ventanas","They open the windows"
-148,"Cerrar (presente)","I close, you close, he/she closes, we close, you close, they close"
-149,"Tienda","Shop"
-150,"La tienda cierra a las 9","The shop closes at 9"
-151,"Comenzar (presente)","I start, you start, he/she starts, we start, you start, they start"
-152,"Proyecto","Project"
-153,"Nosotros comenzamos un nuevo proyecto","We start a new project"
-154,"Terminar (presente)","I finish, you finish, he/she finishes, we finish, you finish, they finish"
-155,"Tarea","Task"
-156,"Él termina su tarea","He finishes his task"
-157,"Olvidar (presente)","I forget, you forget, he/she forgets, we forget, you forget, they forget"
-158,"Llaves","Keys"
-159,"Yo olvido mis llaves","I forget my keys"
-160,"Recordar (presente)","I remember, you remember, he/she remembers, we remember, you remember, they remember"
-161,"Cumpleaños","Birthday"
-162,"Ella recuerda mi cumpleaños","She remembers my birthday"
-163,"Pensar (presente)","I think, you think, he/she thinks, we think, you think, they think"
-164,"Idea","Idea"
-165,"Ellos piensan en una buena idea","They think of a good idea"
-166,"Saber (presente)","I know, you know, he/she knows, we know, you know, they know"
-167,"Respuesta","Answer"
-168,"Nosotros sabemos la respuesta","We know the answer"
-169,"Creer (presente)","I believe, you believe, he/she believes, we believe, you believe, they believe"
-170,"Historia","Story"
-171,"Yo creo su historia","I believe his story"
-172,"Sentir (presente)","I feel, you feel, he/she feels, we feel, you feel, they feel"
-173,"Emoción","Emotion"
-174,"Él se siente feliz","He feels happy"
-175,"Gustar (presente)","I like, you like, he/she likes, we like, you like, they like"
-176,"Comida","Food"
-177,"A ella le gusta la comida italiana","She likes Italian food"
-178,"Odiar (presente)","I hate, you hate, he/she hates, we hate, you hate, they hate"
-179,"Mentira","Lie"
-180,"Ellos odian las mentiras","They hate lies"
-181,"Amar (presente)","I love, you love, he/she loves, we love, you love, they love"
-182,"Familia","Family"
-183,"Nosotros amamos a nuestra familia","We love our family"
-184,"Necesitar (presente)","I need, you need, he/she needs, we need, you need, they need"
-185,"Ayuda","Help"
-186,"Yo necesito ayuda","I need help"
-187,"Querer (presente)","I want, you want, he/she wants, we want, you want, they want"
-188,"Vacaciones","Vacation"
-189,"Ella quiere ir de vacaciones","She wants to go on vacation"
-190,"Poder (presente)","I can, you can, he/she can, we can, you can, they can"
-191,"Problema","Problem"
-192,"Él puede resolver el problema","He can solve the problem"
-193,"Deber (presente)","I should, you should, he/she should, we should, you should, they should"
-194,"Hora","Time"
-195,"Ellos deben llegar a tiempo","They should arrive on time"
-196,"Parecer (presente)","I seem, you seem, he/she seems, we seem, you seem, they seem"
-197,"Cansado","Tired"
-198,"Nosotros parecemos cansados","We seem tired"
-199,"Estar (presente)","I am, you are, he/she is, we are, you are, they are (temporary state)"
-200,"Enfermo","Sick"
-201,"Yo estoy enfermo hoy","I am sick today"
-202,"Llegar (presente)","I arrive, you arrive, he/she arrives, we arrive, you arrive, they arrive"
-203,"Aeropuerto","Airport"
-204,"Ella llega al aeropuerto","She arrives at the airport"
-205,"Salir (presente)","I leave, you leave, he/she leaves, we leave, you leave, they leave"
-206,"Casa","House"
-207,"Ellos salen de casa","They leave the house"
-208,"Entrar (presente)","I enter, you enter, he/she enters, we enter, you enter, they enter"
-209,"Edificio","Building"
-210,"Nosotros entramos en el edificio","We enter the building"
-211,"Subir (presente)","I go up, you go up, he/she goes up, we go up, you go up, they go up"
-212,"Escaleras","Stairs"
-213,"Él sube las escaleras","He goes up the stairs"
-214,"Bajar (presente)","I go down, you go down, he/she goes down, we go down, you go down, they go down"
-215,"Ascensor","Elevator"
-216,"Yo bajo en el ascensor","I go down in the elevator"
-217,"Pedir (presente)","I ask for, you ask for, he/she asks for, we ask for, you ask for, they ask for"
-218,"Menú","Menu"
-219,"Ella pide el menú","She asks for the menu"
-220,"Preguntar (presente)","I ask, you ask, he/she asks, we ask, you ask, they ask"
-221,"Pregunta","Question"
-222,"Ellos preguntan muchas cosas","They ask many things"
-223,"Responder (presente)","I answer, you answer, he/she answers, we answer, you answer, they answer"
-224,"Rápidamente","Quickly"
-225,"Nosotros respondemos rápidamente","We answer quickly"
-226,"Decir (presente)","I say, you say, he/she says, we say, you say, they say"
-227,"Verdad","Truth"
-228,"Él dice la verdad","He says the truth"
-229,"Contar (presente)","I tell, you tell, he/she tells, we tell, you tell, they tell"
-230,"Cuento","Story"
-231,"Yo cuento un cuento","I tell a story"
-233,"Explicar (presente)","I explain, you explain, he/she explains, we explain, you explain, they explain"
-234,"Idea","Idea"
-235,"Ella explica su idea","She explains her idea"
-236,"Entender (presente)","I understand, you understand, he/she understands, we understand, you understand, they understand"
-237,"Concepto","Concept"
-238,"Ellos entienden el concepto","They understand the concept"
-239,"Olvidar (pasado)","I forgot, you forgot, he/she forgot, we forgot, you forgot, they forgot"
-240,"Cita","Appointment"
-241,"Yo olvidé mi cita","I forgot my appointment"
-242,"Recordar (pasado)","I remembered, you remembered, he/she remembered, we remembered, you remembered, they remembered"
-243,"Aniversario","Anniversary"
-244,"Nosotros recordamos nuestro aniversario","We remembered our anniversary"
-245,"Comer (pasado)","I ate, you ate, he/she ate, we ate, you ate, they ate"
-246,"Restaurante","Restaurant"
-247,"Él comió en un restaurante","He ate at a restaurant"
-248,"Beber (pasado)","I drank, you drank, he/she drank, we drank, you drank, they drank"
-249,"Jugo","Juice"
-250,"Ella bebió jugo de naranja","She drank orange juice"
-251,"Ir (pasado)","I went, you went, he/she went, we went, you went, they went"
-252,"Supermercado","Supermarket"
-253,"Ellos fueron al supermercado","They went to the supermarket"
-254,"Comprar (pasado)","I bought, you bought, he/she bought, we bought, you bought, they bought"
-255,"Zapatos","Shoes"
-256,"Yo compré zapatos nuevos","I bought new shoes"
-257,"Vender (pasado)","I sold, you sold, he/she sold, we sold, you sold, they sold"
-258,"Computadora","Computer"
-259,"Nosotros vendimos nuestra computadora vieja","We sold our old computer"
-260,"Trabajar (pasado)","I worked, you worked, he/she worked, we worked, you worked, they worked"
-261,"Proyecto","Project"
-262,"Él trabajó en un proyecto importante","He worked on an important project"
-263,"Estudiar (pasado)","I studied, you studied, he/she studied, we studied, you studied, they studied"
-264,"Examen final","Final exam"
-265,"Ella estudió para el examen final","She studied for the final exam"
-266,"Viajar (pasado)","I traveled, you traveled, he/she traveled, we traveled, you traveled, they traveled"
-267,"Europa","Europe"
-268,"Ellos viajaron por Europa","They traveled through Europe"
-269,"Llegar (pasado)","I arrived, you arrived, he/she arrived, we arrived, you arrived, they arrived"
-270,"Tarde","Late"
-271,"Yo llegué tarde a la reunión","I arrived late to the meeting"
-272,"Salir (pasado)","I left, you left, he/she left, we left, you left, they left"
-273,"Temprano","Early"
-274,"Nosotros salimos temprano de la oficina","We left the office early"
-275,"Vivir (pasado)","I lived, you lived, he/she lived, we lived, you lived, they lived"
-276,"País","Country"
-277,"Él vivió en otro país por un año","He lived in another country for a year"
-278,"Aprender (pasado)","I learned, you learned, he/she learned, we learned, you learned, they learned"
-279,"Idioma nuevo","New language"
-280,"Ella aprendió un idioma nuevo","She learned a new language"
-281,"Enseñar (pasado)","I taught, you taught, he/she taught, we taught, you taught, they taught"
-282,"Matemáticas","Mathematics"
-283,"Ellos enseñaron matemáticas en la escuela","They taught mathematics at school"
-284,"Hablar (futuro)","I will speak, you will speak, he/she will speak, we will speak, you will speak, they will speak"
-285,"Conferencia","Conference"
-286,"Yo hablaré en la conferencia mañana","I will speak at the conference tomorrow"
-287,"Escribir (futuro)","I will write, you will write, he/she will write, we will write, you will write, they will write"
-288,"Libro","Book"
-289,"Nosotros escribiremos un libro juntos","We will write a book together"
-290,"Leer (futuro)","I will read, you will read, he/she will read, we will read, you will read, they will read"
-291,"Novela","Novel"
-292,"Él leerá la novela durante las vacaciones","He will read the novel during the vacation"
-293,"Cocinar (futuro)","I will cook, you will cook, he/she will cook, we will cook, you will cook, they will cook"
-294,"Cena especial","Special dinner"
-295,"Ella cocinará una cena especial para su familia","She will cook a special dinner for her family"
-296,"Viajar (futuro)","I will travel, you will travel, he/she will travel, we will travel, you will travel, they will travel"
-297,"Alrededor del mundo","Around the world"
-298,"Ellos viajarán alrededor del mundo el próximo año","They will travel around the world next year"
-299,"Trabajar (futuro)","I will work, you will work, he/she will work, we will work, you will work, they will work"
-300,"Empresa internacional","International company"
-301,"Yo trabajaré para una empresa internacional","I will work for an international company"
-302,"Estudiar (futuro)","I will study, you will study, he/she will study, we will study, you will study, they will study"
-303,"Universidad extranjera","Foreign university"
-304,"Nosotros estudiaremos en una universidad extranjera","We will study at a foreign university"
-305,"Comprar (futuro)","I will buy, you will buy, he/she will buy, we will buy, you will buy, they will buy"
-306,"Casa nueva","New house"
-307,"Él comprará una casa nueva el próximo mes","He will buy a new house next month"
-308,"Vender (futuro)","I will sell, you will sell, he/she will sell, we will sell, you will sell, they will sell"
-309,"Negocio","Business"
-310,"Ella venderá su negocio el próximo año","She will sell her business next year"
-311,"Aprender (futuro)","I will learn, you will learn, he/she will learn, we will learn, you will learn, they will learn"
-312,"Habilidad nueva","New skill"
-313,"Ellos aprenderán una habilidad nueva en el trabajo","They will learn a new skill at work"
-314,"Enseñar (futuro)","I will teach, you will teach, he/she will teach, we will teach, you will teach, they will teach"
-315,"Curso en línea","Online course"
-316,"Yo enseñaré un curso en línea sobre marketing","I will teach an online course about marketing"
-317,"Vivir (futuro)","I will live, you will live, he/she will live, we will live, you will live, they will live"
-318,"Ciudad diferente","Different city"
-319,"Nosotros viviremos en una ciudad diferente el próximo año","We will live in a different city next year"
-320,"Cambiar (futuro)","I will change, you will change, he/she will change, we will change, you will change, they will change"
-321,"Estilo de vida","Lifestyle"
-322,"Él cambiará su estilo de vida por razones de salud","He will change his lifestyle for health reasons"
-323,"Mejorar (futuro)","I will improve, you will improve, he/she will improve, we will improve, you will improve, they will improve"
-324,"Habilidades de comunicación","Communication skills"
-325,"Ella mejorará sus habilidades de comunicación","She will improve her communication skills"
-326,"Construir (futuro)","I will build, you will build, he/she will build, we will build, you will build, they will build"
-327,"Equipo fuerte","Strong team"
-328,"Ellos construirán un equipo fuerte en la empresa","They will build a strong team in the company"
-329,"Desarrollar (futuro)","I will develop, you will develop, he/she will develop, we will develop, you will develop, they will develop"
-330,"Aplicación móvil","Mobile application"
-331,"Yo desarrollaré una aplicación móvil innovadora","I will develop an innovative mobile application"
-332,"Investigar (futuro)","I will research, you will research, he/she will research, we will research, you will research, they will research"
-333,"Tema importante","Important topic"
-334,"Nosotros investigaremos un tema importante para nuestra tesis","We will research an important topic for our thesis"
-335,"Presentar (futuro)","I will present, you will present, he/she will present, we will present, you will present, they will present"
-336,"Resultados del proyecto","Project results"
-337,"Él presentará los resultados del proyecto en la reunión","He will present the project results at the meeting"
-338,"Organizar (futuro)","I will organize, you will organize, he/she will organize, we will organize, you will organize, they will organize"
-339,"Evento benéfico","Charity event"
-340,"Ella organizará un evento benéfico para recaudar fondos","She will organize a charity event to raise funds"
-341,"Participar (futuro)","I will participate, you will participate, he/she will participate, we will participate, you will participate, they will participate"
-342,"Competencia internacional","International competition"
-343,"Ellos participarán en una competencia internacional de debate","They will participate in an international debate competition"
-344,"Celebrar (futuro)","I will celebrate, you will celebrate, he/she will celebrate, we will celebrate, you will celebrate, they will celebrate"
-345,"Aniversario de bodas","Wedding anniversary"
-346,"Yo celebraré mi aniversario de bodas en París","I will celebrate my wedding anniversary in Paris"
-347,"Planear (futuro)","I will plan, you will plan, he/she will plan, we will plan, you will plan, they will plan"
-348,"Viaje de negocios","Business trip"
-349,"Nosotros planearemos cuidadosamente nuestro próximo viaje de negocios","We will carefully plan our next business trip"
-350,"Invertir (futuro)","I will invest, you will invest, he/she will invest, we will invest, you will invest, they will invest"
-351,"Mercado de valores","Stock market"
-352,"Él invertirá en el mercado de valores por primera vez","He will invest in the stock market for the first time"
-353,"Ahorrar (futuro)","I will save, you will save, he/she will save, we will save, you will save, they will save"
-354,"Dinero para la jubilación","Money for retirement"
-355,"Ella ahorrará más dinero para su jubilación","She will save more money for her retirement"
-356,"Expandir (futuro)","I will expand, you will expand, he/she will expand, we will expand, you will expand, they will expand"
-357,"Negocio familiar","Family business"
-358,"Ellos expandirán su negocio familiar a otras ciudades","They will expand their family business to other cities"
-359,"Renovar (futuro)","I will renovate, you will renovate, he/she will renovate, we will renovate, you will renovate, they will renovate"
-360,"Cocina antigua","Old kitchen"
-361,"Yo renovaré mi cocina antigua el próximo verano","I will renovate my old kitchen next summer"
-362,"Adoptar (futuro)","I will adopt, you will adopt, he/she will adopt, we will adopt, you will adopt, they will adopt"
-363,"Perro de un refugio","Shelter dog"
-364,"Nosotros adoptaremos un perro de un refugio","We will adopt a dog from a shelter"
-365,"Donar (futuro)","I will donate, you will donate, he/she will donate, we will donate, you will donate, they will donate"
-366,"Ropa usada","Used clothes"
-367,"Él donará su ropa usada a una organización benéfica","He will donate his used clothes to a charity organization"
-368,"Reciclar (futuro)","I will recycle, you will recycle, he/she will recycle, we will recycle, you will recycle, they will recycle"
-369,"Materiales plásticos","Plastic materials"
-370,"Ella reciclará todos los materiales plásticos en su hogar","She will recycle all plastic materials in her home"
-371,"Plantar (futuro)","I will plant, you will plant, he/she will plant, we will plant, you will plant, they will plant"
-372,"Árboles en el parque local","Trees in the local park"
-373,"Ellos plantarán árboles en el parque local como voluntarios","They will plant trees in the local park as volunteers"
-374,"Apoyar (futuro)","I will support, you will support, he/she will support, we will support, you will support, they will support"
-375,"Causa ambiental","Environmental cause"
-376,"Yo apoyaré una causa ambiental importante","I will support an important environmental cause"
-377,"Crear (futuro)","I will create, you will create, he/she will create, we will create, you will create, they will create"
-378,"Obra de arte única","Unique artwork"
-379,"Nosotros crearemos una obra de arte única para la exposición","We will create a unique artwork for the exhibition"
-380,"Dirigir (futuro)","I will direct, you will direct, he/she will direct, we will direct, you will direct, they will direct"
-381,"Película independiente","Independent film"
-382,"Él dirigirá su primera película independiente","He will direct his first independent film"
-383,"Componer (futuro)","I will compose, you will compose, he/she will compose, we will compose, you will compose, they will compose"
-384,"Canción original","Original song"
-385,"Ella compondrá una canción original para el concierto benéfico","She will compose an original song for the charity concert"
-386,"Publicar (futuro)","I will publish, you will publish, he/she will publish, we will publish, you will publish, they will publish"
-387,"Artículo científico","Scientific article"
-388,"Ellos publicarán su artículo científico en una revista prestigiosa","They will publish their scientific article in a prestigious journal"
-389,"Lanzar (futuro)","I will launch, you will launch, he/she will launch, we will launch, you will launch, they will launch"
-390,"Producto innovador","Innovative product"
-391,"Yo lanzaré un producto innovador en el mercado","I will launch an innovative product in the market"
-392,"Implementar (futuro)","I will implement, you will implement, he/she will implement, we will implement, you will implement, they will implement"
-393,"Sistema de gestión","Management system"
-394,"Nosotros implementaremos un nuevo sistema de gestión en la empresa","We will implement a new management system in the company"
-395,"Actualizar (futuro)","I will update, you will update, he/she will update, we will update, you will update, they will update"
-396,"Software obsoleto","Outdated software"
-397,"Él actualizará el software obsoleto en todos los computadores","He will update the outdated software on all computers"
-433,"Resolver (futuro)","I will solve, you will solve, he/she will solve, we will solve, you will solve, they will solve"
-434,"Problema complejo","Complex problem"
-435,"Ella resolverá el problema complejo utilizando tecnología avanzada","She will solve the complex problem using advanced technology"
-436,"Analizar (futuro)","I will analyze, you will analyze, he/she will analyze, we will analyze, you will analyze, they will analyze"
-437,"Datos del mercado","Market data"
-438,"Ellos analizarán los datos del mercado para tomar decisiones informadas","They will analyze market data to make informed decisions"
-439,"Colaborar (futuro)","I will collaborate, you will collaborate, he/she will collaborate, we will collaborate, you will collaborate, they will collaborate"
-440,"Equipo internacional","International team"
-441,"Yo colaboraré con un equipo internacional en el próximo proyecto","I will collaborate with an international team on the next project"
-442,"Negociar (futuro)","I will negotiate, you will negotiate, he/she will negotiate, we will negotiate, you will negotiate, they will negotiate"
-443,"Contrato importante","Important contract"
-444,"Nosotros negociaremos un contrato importante con nuestros socios comerciales","We will negotiate an important contract with our business partners"
-445,"Innovar (futuro)","I will innovate, you will innovate, he/she will innovate, we will innovate, you will innovate, they will innovate"
-446,"Sector tecnológico","Technology sector"
-447,"Él innovará en el sector tecnológico con su nueva startup","He will innovate in the technology sector with his new startup"
-448,"Optimizar (futuro)","I will optimize, you will optimize, he/she will optimize, we will optimize, you will optimize, they will optimize"
-449,"Procesos de producción","Production processes"
-450,"Ella optimizará los procesos de producción para aumentar la eficiencia","She will optimize production processes to increase efficiency"
-451,"Diversificar (futuro)","I will diversify, you will diversify, he/she will diversify, we will diversify, you will diversify, they will diversify"
-452,"Cartera de inversiones","Investment portfolio"
-453,"Ellos diversificarán su cartera de inversiones para reducir riesgos","They will diversify their investment portfolio to reduce risks"
-454,"Anticipar (futuro)","I will anticipate, you will anticipate, he/she will anticipate, we will anticipate, you will anticipate, they will anticipate"
-455,"Cambios en el mercado","Market changes"
-456,"Yo anticiparé los cambios en el mercado para mantener nuestra ventaja competitiva","I will anticipate market changes to maintain our competitive advantage"
-457,"Adaptar (futuro)","I will adapt, you will adapt, he/she will adapt, we will adapt, you will adapt, they will adapt"
-458,"Nuevas tecnologías","New technologies"
-459,"Nosotros nos adaptaremos rápidamente a las nuevas tecnologías en nuestra industria","We will quickly adapt to new technologies in our industry"
-460,"Ejecutar (futuro)","I will execute, you will execute, he/she will execute, we will execute, you will execute, they will execute"
-461,"Plan estratégico","Strategic plan"
-462,"Él ejecutará el plan estratégico con precisión y eficacia","He will execute the strategic plan with precision and effectiveness"
-463,"Supervisar (futuro)","I will supervise, you will supervise, he/she will supervise, we will supervise, you will supervise, they will supervise"
-464,"Equipo de desarrollo","Development team"
-465,"Ella supervisará al equipo de desarrollo durante la fase crítica del proyecto","She will supervise the development team during the critical phase of the project"
-466,"Coordinar (futuro)","I will coordinate, you will coordinate, he/she will coordinate, we will coordinate, you will coordinate, they will coordinate"
-467,"Esfuerzos de múltiples departamentos","Multi-department efforts"
-468,"Ellos coordinarán los esfuerzos de múltiples departamentos para lograr los objetivos de la empresa","They will coordinate multi-department efforts to achieve company goals"
-469,"Evaluar (futuro)","I will evaluate, you will evaluate, he/she will evaluate, we will evaluate, you will evaluate, they will evaluate"
-470,"Impacto ambiental","Environmental impact"
-471,"Yo evaluaré el impacto ambiental de nuestras operaciones comerciales","I will evaluate the environmental impact of our business operations"
-472,"Fomentar (futuro)","I will foster, you will foster, he/she will foster, we will foster, you will foster, they will foster"
-473,"Cultura de innovación","Culture of innovation"
-474,"Nosotros fomentaremos una cultura de innovación en toda la organización","We will foster a culture of innovation throughout the organization"
-475,"Priorizar (futuro)","I will prioritize, you will prioritize, he/she will prioritize, we will prioritize, you will prioritize, they will prioritize"
-476,"Tareas críticas","Critical tasks"
-477,"Él priorizará las tareas críticas para cumplir con los plazos del proyecto","He will prioritize critical tasks to meet project deadlines"
-478,"Empoderar (futuro)","I will empower, you will empower, he/she will empower, we will empower, you will empower, they will empower"
-479,"Empleados","Employees"
-480,"Ella empoderará a los empleados para que tomen decisiones importantes","She will empower employees to make important decisions"
-481,"Consolidar (futuro)","I will consolidate, you will consolidate, he/she will consolidate, we will consolidate, you will consolidate, they will consolidate"
-482,"Operaciones globales","Global operations"
-483,"Ellos consolidarán sus operaciones globales para mejorar la eficiencia","They will consolidate their global operations to improve efficiency"
-484,"Revolucionar (futuro)","I will revolutionize, you will revolutionize, he/she will revolutionize, we will revolutionize, you will revolutionize, they will revolutionize"
-485,"Industria de la moda","Fashion industry"
-486,"Yo revolucionaré la industria de la moda con diseños sostenibles","I will revolutionize the fashion industry with sustainable designs"
-487,"Transformar (futuro)","I will transform, you will transform, he/she will transform, we will transform, you will transform, they will transform"
-488,"Modelo de negocio","Business model"
-489,"Nosotros transformaremos nuestro modelo de negocio para adaptarnos a la economía digital","We will transform our business model to adapt to the digital economy"
-490,"Liderar (futuro)","I will lead, you will lead, he/she will lead, we will lead, you will lead, they will lead"
-491,"Iniciativa de sostenibilidad","Sustainability initiative"
-492,"Él liderará una importante iniciativa de sostenibilidad en la industria","He will lead a major sustainability initiative in the industry"
-493,"Redefinir (futuro)","I will redefine, you will redefine, he/she will redefine, we will redefine, you will redefine, they will redefine"
-494,"Estándares de calidad","Quality standards"
-495,"Ella redefinirá los estándares de calidad en nuestra línea de productos","She will redefine quality standards in our product line"
-496,"Influenciar (futuro)","I will influence, you will influence, he/she will influence, we will influence, you will influence, they will influence"
-497,"Políticas públicas","Public policies"
-498,"Ellos influenciarán las políticas públicas a través de su investigación","They will influence public policies through their research"
-499,"Maximizar (futuro)","I will maximize, you will maximize, he/she will maximize, we will maximize, you will maximize, they will maximize"
-500,"Retorno de inversión","Return on investment"
-501,"Yo maximizaré el retorno de inversión implementando estrategias innovadoras","I will maximize the return on investment by implementing innovative strategies"
-502,"Minimizar (futuro)","I will minimize, you will minimize, he/she will minimize, we will minimize, you will minimize, they will minimize"
-503,"Impacto negativo","Negative impact"
-504,"Nosotros minimizaremos el impacto negativo de nuestras operaciones en el medio ambiente","We will minimize the negative impact of our operations on the environment"
-505,"Proponer (futuro)","I will propose, you will propose, he/she will propose, we will propose, you will propose, they will propose"
-506,"Solución innovadora","Innovative solution"
-507,"Él propondrá una solución innovadora para abordar el problema de la escasez de agua","He will propose an innovative solution to address the water scarcity problem"
-508,"Generar (futuro)","I will generate, you will generate, he/she will generate, we will generate, you will generate, they will generate"
-509,"Energía renovable","Renewable energy"
-510,"Ella generará energía renovable utilizando tecnología de punta","She will generate renewable energy using cutting-edge technology"
-511,"Promocionar (futuro)","I will promote, you will promote, he/she will promote, we will promote, you will promote, they will promote"
-512,"Campaña de marketing","Marketing campaign"
-513,"Ellos promocionarán el nuevo producto a través de una campaña de marketing innovadora","They will promote the new product through an innovative marketing campaign"
-514,"Debatir (futuro)","I will debate, you will debate, he/she will debate, we will debate, you will debate, they will debate"
-515,"Temas controversiales","Controversial topics"
-516,"Yo debatiré temas controversiales en el próximo foro político","I will debate controversial topics in the upcoming political forum"
-517,"Mediar (futuro)","I will mediate, you will mediate, he/she will mediate, we will mediate, you will mediate, they will mediate"
-518,"Conflicto laboral","Labor dispute"
-519,"Nosotros mediaremos en el conflicto laboral entre la empresa y el sindicato","We will mediate in the labor dispute between the company and the union"
-520,"Arbitrar (futuro)","I will arbitrate, you will arbitrate, he/she will arbitrate, we will arbitrate, you will arbitrate, they will arbitrate"
-521,"Disputa comercial","Commercial dispute"
-522,"Él arbitrará en la disputa comercial entre las dos corporaciones","He will arbitrate in the commercial dispute between the two corporations"
-523,"Conciliar (futuro)","I will reconcile, you will reconcile, he/she will reconcile, we will reconcile, you will reconcile, they will reconcile"
-524,"Diferencias culturales","Cultural differences"
-525,"Ella conciliará las diferencias culturales en el equipo internacional","She will reconcile cultural differences in the international team"
-526,"Sintetizar (futuro)","I will synthesize, you will synthesize, he/she will synthesize, we will synthesize, you will synthesize, they will synthesize"
-527,"Información compleja","Complex information"
-528,"Ellos sintetizarán la información compleja en un informe conciso","They will synthesize complex information into a concise report"
-529,"Conceptualizar (futuro)","I will conceptualize, you will conceptualize, he/she will conceptualize, we will conceptualize, you will conceptualize, they will conceptualize"
-530,"Proyecto innovador","Innovative project"
-531,"Yo conceptualizaré un proyecto innovador para mejorar la educación en áreas rurales","I will conceptualize an innovative project to improve education in rural areas"
-532,"Abstraer (futuro)","I will abstract, you will abstract, he/she will abstract, we will abstract, you will abstract, they will abstract"
-533,"Principios fundamentales","Fundamental principles"
-534,"Nosotros abstraeremos los principios fundamentales de los datos recopilados","We will abstract the fundamental principles from the collected data"
-535,"Teorizar (futuro)","I will theorize, you will theorize, he/she will theorize, we will theorize, you will theorize, they will theorize"
-536,"Origen del universo","Origin of the universe"
-537,"Él teorizará sobre el origen del universo basándose en nuevos descubrimientos","He will theorize about the origin of the universe based on new discoveries"
-538,"Postular (futuro)","I will postulate, you will postulate, he/she will postulate, we will postulate, you will postulate, they will postulate"
-539,"Nueva hipótesis","New hypothesis"
-540,"Ella postulará una nueva hipótesis sobre el funcionamiento de la memoria humana","She will postulate a new hypothesis about how human memory works"
-541,"Deducir (futuro)","I will deduce, you will deduce, he/she will deduce, we will deduce, you will deduce, they will deduce"
-542,"Conclusiones lógicas","Logical conclusions"
-543,"Ellos deducirán conclusiones lógicas basadas en la evidencia disponible","They will deduce logical conclusions based on the available evidence"
-544,"Inducir (futuro)","I will induce, you will induce, he/she will induce, we will induce, you will induce, they will induce"
-545,"Patrón general","General pattern"
-546,"Yo induciré un patrón general a partir de los casos observados","I will induce a general pattern from the observed cases"
-547,"Inferir (futuro)","I will infer, you will infer, he/she will infer, we will infer, you will infer, they will infer"
-548,"Motivaciones subyacentes","Underlying motivations"
-549,"Nosotros inferiremos las motivaciones subyacentes del comportamiento del consumidor","We will infer the underlying motivations of consumer behavior"
-550,"Extrapolar (futuro)","I will extrapolate, you will extrapolate, he/she will extrapolate, we will extrapolate, you will extrapolate, they will extrapolate"
-551,"Tendencias futuras","Future trends"
-552,"Él extrapolará las tendencias futuras del mercado basándose en datos históricos","He will extrapolate future market trends based on historical data"
-553,"Correlacionar (futuro)","I will correlate, you will correlate, he/she will correlate, we will correlate, you will correlate, they will correlate"
-554,"Variables económicas","Economic variables"
-555,"Ella correlacionará diferentes variables económicas para identificar patrones","She will correlate different economic variables to identify patterns"
-556,"Diagnosticar (futuro)","I will diagnose, you will diagnose, he/she will diagnose, we will diagnose, you will diagnose, they will diagnose"
-557,"Problema sistémico","Systemic problem"
-558,"Ellos diagnosticarán el problema sistémico en la organización","They will diagnose the systemic problem in the organization"
-559,"Pronosticar (futuro)","I will forecast, you will forecast, he/she will forecast, we will forecast, you will forecast, they will forecast"
-560,"Condiciones económicas","Economic conditions"
-561,"Yo pronosticaré las condiciones económicas para el próximo año fiscal","I will forecast economic conditions for the next fiscal year"
-562,"Simular (futuro)","I will simulate, you will simulate, he/she will simulate, we will simulate, you will simulate, they will simulate"
-563,"Escenarios de crisis","Crisis scenarios"
-564,"Nosotros simularemos varios escenarios de crisis para preparar a la empresa","We will simulate various crisis scenarios to prepare the company"
-565,"Modelar (futuro)","I will model, you will model, he/she will model, we will model, you will model, they will model"
-566,"Comportamiento del mercado","Market behavior"
+1,Ser (presente),"I am, you are, he is, we are, you are, they are"
+2,Yo,I
+3,Tú,You (singular)
+4,Él,He
+5,Ella,She
+6,Nosotros,We
+7,Ellos,They
+8,Hola,Hello
+9,Adiós,Goodbye
+10,Gracias,Thank you
+11,Por favor,Please
+12,Sí,Yes
+13,No,No
+14,Tener (presente),"I have, you have, he/she has, we have, you have, they have"
+15,Libro,Book
+16,Casa,House
+17,Perro,Dog
+18,Gato,Cat
+19,Agua,Water
+20,Comida,Food
+21,Ir (presente),"I go, you go, he/she goes, we go, you go, they go"
+22,Escuela,School
+23,Trabajo,Work
+24,Amigo,Friend
+25,Familia,Family
+26,Yo soy estudiante,I am a student
+27,Él tiene un perro,He has a dog
+28,Nosotros vamos a la escuela,We go to school
+29,Comer (presente),"I eat, you eat, he/she eats, we eat, you eat, they eat"
+30,Manzana,Apple
+31,Pan,Bread
+32,Leche,Milk
+33,Ella come una manzana,She eats an apple
+34,Ellos tienen leche,They have milk
+35,Hablar (presente),"I speak, you speak, he/she speaks, we speak, you speak, they speak"
+36,Inglés,English
+37,Español,Spanish
+38,Idioma,Language
+39,Yo hablo español,I speak Spanish
+40,Nosotros aprendemos inglés,We learn English
+41,Hacer (presente),"I do/make, you do/make, he/she does/makes, we do/make, you do/make, they do/make"
+42,Tarea,Homework
+43,Ejercicio,Exercise
+44,Trabajo,Work (noun)
+45,Él hace su tarea,He does his homework
+46,Ellas hacen ejercicio,They do exercise
+47,Ver (presente),"I see, you see, he/she sees, we see, you see, they see"
+48,Televisión,Television
+49,Película,Movie
+50,Nosotros vemos una película,We watch a movie
+51,Escribir (presente),"I write, you write, he/she writes, we write, you write, they write"
+52,Lápiz,Pencil
+53,Papel,Paper
+54,Carta,Letter
+55,Ella escribe una carta,She writes a letter
+56,Leer (presente),"I read, you read, he/she reads, we read, you read, they read"
+57,Revista,Magazine
+58,Periódico,Newspaper
+59,Ellos leen el periódico,They read the newspaper
+60,Jugar (presente),"I play, you play, he/she plays, we play, you play, they play"
+61,Fútbol,Soccer
+62,Baloncesto,Basketball
+63,Nosotros jugamos fútbol,We play soccer
+64,Comprar (presente),"I buy, you buy, he/she buys, we buy, you buy, they buy"
+65,Tienda,Store
+66,Ropa,Clothes
+67,Ella compra ropa nueva,She buys new clothes
+68,Vender (presente),"I sell, you sell, he/she sells, we sell, you sell, they sell"
+69,Carro,Car
+70,Bicicleta,Bicycle
+71,Él vende su carro viejo,He sells his old car
+72,Trabajar (presente),"I work, you work, he/she works, we work, you work, they work"
+73,Oficina,Office
+74,Empresa,Company
+75,Ellos trabajan en una oficina grande,They work in a big office
+76,Estudiar (presente),"I study, you study, he/she studies, we study, you study, they study"
+77,Universidad,University
+78,Examen,Exam
+79,Yo estudio para el examen,I study for the exam
+80,Cocinar (presente),"I cook, you cook, he/she cooks, we cook, you cook, they cook"
+81,Cocina,Kitchen
+82,Receta,Recipe
+83,Ella cocina una nueva receta,She cooks a new recipe
+84,Dormir (presente),"I sleep, you sleep, he/she sleeps, we sleep, you sleep, they sleep"
+85,Cama,Bed
+86,Almohada,Pillow
+87,El niño duerme en su cama,The boy sleeps in his bed
+88,Caminar (presente),"I walk, you walk, he/she walks, we walk, you walk, they walk"
+89,Parque,Park
+90,Calle,Street
+91,Nosotros caminamos en el parque,We walk in the park
+92,Correr (presente),"I run, you run, he/she runs, we run, you run, they run"
+93,Maratón,Marathon
+94,Ellos corren un maratón,They run a marathon
+95,Nadar (presente),"I swim, you swim, he/she swims, we swim, you swim, they swim"
+96,Piscina,Pool
+97,Playa,Beach
+98,Yo nado en la piscina,I swim in the pool
+99,Cantar (presente),"I sing, you sing, he/she sings, we sing, you sing, they sing"
+100,Canción,Song
+101,Bailar (presente),"I dance, you dance, he/she dances, we dance, you dance, they dance"
+102,Música,Music
+103,Fiesta,Party
+104,Ellos bailan en la fiesta,They dance at the party
+105,Escuchar (presente),"I listen, you listen, he/she listens, we listen, you listen, they listen"
+106,Radio,Radio
+107,Ella escucha la radio,She listens to the radio
+108,Viajar (presente),"I travel, you travel, he/she travels, we travel, you travel, they travel"
+109,Avión,Airplane
+110,Tren,Train
+111,Nosotros viajamos en avión,We travel by plane
+112,Conducir (presente),"I drive, you drive, he/she drives, we drive, you drive, they drive"
+113,Autobús,Bus
+114,Taxi,Taxi
+115,Él conduce un taxi,He drives a taxi
+116,Aprender (presente),"I learn, you learn, he/she learns, we learn, you learn, they learn"
+117,Lección,Lesson
+118,Profesor,Teacher
+119,Yo aprendo una nueva lección,I learn a new lesson
+120,Enseñar (presente),"I teach, you teach, he/she teaches, we teach, you teach, they teach"
+121,Clase,Class
+122,Estudiante,Student
+123,Ella enseña inglés a los estudiantes,She teaches English to the students
+124,Vivir (presente),"I live, you live, he/she lives, we live, you live, they live"
+125,Apartamento,Apartment
+126,Ciudad,City
+127,Ellos viven en una gran ciudad,They live in a big city
+128,Pagar (presente),"I pay, you pay, he/she pays, we pay, you pay, they pay"
+129,Dinero,Money
+130,Cuenta,Bill
+131,Nosotros pagamos la cuenta,We pay the bill
+132,Llamar (presente),"I call, you call, he/she calls, we call, you call, they call"
+133,Teléfono,Phone
+134,Número,Number
+135,Él llama a su amigo,He calls his friend
+136,Enviar (presente),"I send, you send, he/she sends, we send, you send, they send"
+137,Correo electrónico,Email
+138,Mensaje,Message
+139,Yo envío un correo electrónico,I send an email
+140,Recibir (presente),"I receive, you receive, he/she receives, we receive, you receive, they receive"
+141,Paquete,Package
+142,Regalo,Gift
+143,Ella recibe un regalo,She receives a gift
+144,Abrir (presente),"I open, you open, he/she opens, we open, you open, they open"
+145,Puerta,Door
+146,Ventana,Window
+147,Ellos abren las ventanas,They open the windows
+148,Cerrar (presente),"I close, you close, he/she closes, we close, you close, they close"
+149,Tienda,Shop
+150,La tienda cierra a las 9,The shop closes at 9
+151,Comenzar (presente),"I start, you start, he/she starts, we start, you start, they start"
+152,Proyecto,Project
+153,Nosotros comenzamos un nuevo proyecto,We start a new project
+154,Terminar (presente),"I finish, you finish, he/she finishes, we finish, you finish, they finish"
+155,Tarea,Task
+156,Él termina su tarea,He finishes his task
+157,Olvidar (presente),"I forget, you forget, he/she forgets, we forget, you forget, they forget"
+158,Llaves,Keys
+159,Yo olvido mis llaves,I forget my keys
+160,Recordar (presente),"I remember, you remember, he/she remembers, we remember, you remember, they remember"
+161,Cumpleaños,Birthday
+162,Ella recuerda mi cumpleaños,She remembers my birthday
+163,Pensar (presente),"I think, you think, he/she thinks, we think, you think, they think"
+164,Idea,Idea
+165,Ellos piensan en una buena idea,They think of a good idea
+166,Saber (presente),"I know, you know, he/she knows, we know, you know, they know"
+167,Respuesta,Answer
+168,Nosotros sabemos la respuesta,We know the answer
+169,Creer (presente),"I believe, you believe, he/she believes, we believe, you believe, they believe"
+170,Historia,Story
+171,Yo creo su historia,I believe his story
+172,Sentir (presente),"I feel, you feel, he/she feels, we feel, you feel, they feel"
+173,Emoción,Emotion
+174,Él se siente feliz,He feels happy
+175,Gustar (presente),"I like, you like, he/she likes, we like, you like, they like"
+176,Comida,Food
+177,A ella le gusta la comida italiana,She likes Italian food
+178,Odiar (presente),"I hate, you hate, he/she hates, we hate, you hate, they hate"
+179,Mentira,Lie
+180,Ellos odian las mentiras,They hate lies
+181,Amar (presente),"I love, you love, he/she loves, we love, you love, they love"
+182,Familia,Family
+183,Nosotros amamos a nuestra familia,We love our family
+184,Necesitar (presente),"I need, you need, he/she needs, we need, you need, they need"
+185,Ayuda,Help
+186,Yo necesito ayuda,I need help
+187,Querer (presente),"I want, you want, he/she wants, we want, you want, they want"
+188,Vacaciones,Vacation
+189,Ella quiere ir de vacaciones,She wants to go on vacation
+190,Poder (presente),"I can, you can, he/she can, we can, you can, they can"
+191,Problema,Problem
+192,Él puede resolver el problema,He can solve the problem
+193,Deber (presente),"I should, you should, he/she should, we should, you should, they should"
+194,Hora,Time
+195,Ellos deben llegar a tiempo,They should arrive on time
+196,Parecer (presente),"I seem, you seem, he/she seems, we seem, you seem, they seem"
+197,Cansado,Tired
+198,Nosotros parecemos cansados,We seem tired
+199,Estar (presente),"I am, you are, he/she is, we are, you are, they are (temporary state)"
+200,Enfermo,Sick
+201,Yo estoy enfermo hoy,I am sick today
+202,Llegar (presente),"I arrive, you arrive, he/she arrives, we arrive, you arrive, they arrive"
+203,Aeropuerto,Airport
+204,Ella llega al aeropuerto,She arrives at the airport
+205,Salir (presente),"I leave, you leave, he/she leaves, we leave, you leave, they leave"
+206,Casa,House
+207,Ellos salen de casa,They leave the house
+208,Entrar (presente),"I enter, you enter, he/she enters, we enter, you enter, they enter"
+209,Edificio,Building
+210,Nosotros entramos en el edificio,We enter the building
+211,Subir (presente),"I go up, you go up, he/she goes up, we go up, you go up, they go up"
+212,Escaleras,Stairs
+213,Él sube las escaleras,He goes up the stairs
+214,Bajar (presente),"I go down, you go down, he/she goes down, we go down, you go down, they go down"
+215,Ascensor,Elevator
+216,Yo bajo en el ascensor,I go down in the elevator
+217,Pedir (presente),"I ask for, you ask for, he/she asks for, we ask for, you ask for, they ask for"
+218,Menú,Menu
+219,Ella pide el menú,She asks for the menu
+220,Preguntar (presente),"I ask, you ask, he/she asks, we ask, you ask, they ask"
+221,Pregunta,Question
+222,Ellos preguntan muchas cosas,They ask many things
+223,Responder (presente),"I answer, you answer, he/she answers, we answer, you answer, they answer"
+224,Rápidamente,Quickly
+225,Nosotros respondemos rápidamente,We answer quickly
+226,Decir (presente),"I say, you say, he/she says, we say, you say, they say"
+227,Verdad,Truth
+228,Él dice la verdad,He says the truth
+229,Contar (presente),"I tell, you tell, he/she tells, we tell, you tell, they tell"
+230,Cuento,Story
+231,Yo cuento un cuento,I tell a story
+232,Explicar (presente),"I explain, you explain, he/she explains, we explain, you explain, they explain"
+233,Idea,Idea
+234,Ella explica su idea,She explains her idea
+235,Entender (presente),"I understand, you understand, he/she understands, we understand, you understand, they understand"
+236,Concepto,Concept
+237,Ellos entienden el concepto,They understand the concept
+238,Olvidar (pasado),"I forgot, you forgot, he/she forgot, we forgot, you forgot, they forgot"
+239,Cita,Appointment
+240,Yo olvidé mi cita,I forgot my appointment
+241,Recordar (pasado),"I remembered, you remembered, he/she remembered, we remembered, you remembered, they remembered"
+242,Aniversario,Anniversary
+243,Nosotros recordamos nuestro aniversario,We remembered our anniversary
+244,Comer (pasado),"I ate, you ate, he/she ate, we ate, you ate, they ate"
+245,Restaurante,Restaurant
+246,Él comió en un restaurante,He ate at a restaurant
+247,Beber (pasado),"I drank, you drank, he/she drank, we drank, you drank, they drank"
+248,Jugo,Juice
+249,Ella bebió jugo de naranja,She drank orange juice
+250,Ir (pasado),"I went, you went, he/she went, we went, you went, they went"
+251,Supermercado,Supermarket
+252,Ellos fueron al supermercado,They went to the supermarket
+253,Comprar (pasado),"I bought, you bought, he/she bought, we bought, you bought, they bought"
+254,Zapatos,Shoes
+255,Yo compré zapatos nuevos,I bought new shoes
+256,Vender (pasado),"I sold, you sold, he/she sold, we sold, you sold, they sold"
+257,Computadora,Computer
+258,Nosotros vendimos nuestra computadora vieja,We sold our old computer
+259,Trabajar (pasado),"I worked, you worked, he/she worked, we worked, you worked, they worked"
+260,Proyecto,Project
+261,Él trabajó en un proyecto importante,He worked on an important project
+262,Estudiar (pasado),"I studied, you studied, he/she studied, we studied, you studied, they studied"
+263,Examen final,Final exam
+264,Ella estudió para el examen final,She studied for the final exam
+265,Viajar (pasado),"I traveled, you traveled, he/she traveled, we traveled, you traveled, they traveled"
+266,Europa,Europe
+267,Ellos viajaron por Europa,They traveled through Europe
+268,Llegar (pasado),"I arrived, you arrived, he/she arrived, we arrived, you arrived, they arrived"
+269,Tarde,Late
+270,Yo llegué tarde a la reunión,I arrived late to the meeting
+271,Salir (pasado),"I left, you left, he/she left, we left, you left, they left"
+272,Temprano,Early
+273,Nosotros salimos temprano de la oficina,We left the office early
+274,Vivir (pasado),"I lived, you lived, he/she lived, we lived, you lived, they lived"
+275,País,Country
+276,Él vivió en otro país por un año,He lived in another country for a year
+277,Aprender (pasado),"I learned, you learned, he/she learned, we learned, you learned, they learned"
+278,Idioma nuevo,New language
+279,Ella aprendió un idioma nuevo,She learned a new language
+280,Enseñar (pasado),"I taught, you taught, he/she taught, we taught, you taught, they taught"
+281,Matemáticas,Mathematics
+282,Ellos enseñaron matemáticas en la escuela,They taught mathematics at school
+283,Hablar (futuro),"I will speak, you will speak, he/she will speak, we will speak, you will speak, they will speak"
+284,Conferencia,Conference
+285,Yo hablaré en la conferencia mañana,I will speak at the conference tomorrow
+286,Escribir (futuro),"I will write, you will write, he/she will write, we will write, you will write, they will write"
+287,Libro,Book
+288,Nosotros escribiremos un libro juntos,We will write a book together
+289,Leer (futuro),"I will read, you will read, he/she will read, we will read, you will read, they will read"
+290,Novela,Novel
+291,Él leerá la novela durante las vacaciones,He will read the novel during the vacation
+292,Cocinar (futuro),"I will cook, you will cook, he/she will cook, we will cook, you will cook, they will cook"
+293,Cena especial,Special dinner
+294,Ella cocinará una cena especial para su familia,She will cook a special dinner for her family
+295,Viajar (futuro),"I will travel, you will travel, he/she will travel, we will travel, you will travel, they will travel"
+296,Alrededor del mundo,Around the world
+297,Ellos viajarán alrededor del mundo el próximo año,They will travel around the world next year
+298,Trabajar (futuro),"I will work, you will work, he/she will work, we will work, you will work, they will work"
+299,Empresa internacional,International company
+300,Yo trabajaré para una empresa internacional,I will work for an international company
+301,Estudiar (futuro),"I will study, you will study, he/she will study, we will study, you will study, they will study"
+302,Universidad extranjera,Foreign university
+303,Nosotros estudiaremos en una universidad extranjera,We will study at a foreign university
+304,Comprar (futuro),"I will buy, you will buy, he/she will buy, we will buy, you will buy, they will buy"
+305,Casa nueva,New house
+306,Él comprará una casa nueva el próximo mes,He will buy a new house next month
+307,Vender (futuro),"I will sell, you will sell, he/she will sell, we will sell, you will sell, they will sell"
+308,Negocio,Business
+309,Ella venderá su negocio el próximo año,She will sell her business next year
+310,Aprender (futuro),"I will learn, you will learn, he/she will learn, we will learn, you will learn, they will learn"
+311,Habilidad nueva,New skill
+312,Ellos aprenderán una habilidad nueva en el trabajo,They will learn a new skill at work
+313,Enseñar (futuro),"I will teach, you will teach, he/she will teach, we will teach, you will teach, they will teach"
+314,Curso en línea,Online course
+315,Yo enseñaré un curso en línea sobre marketing,I will teach an online course about marketing
+316,Vivir (futuro),"I will live, you will live, he/she will live, we will live, you will live, they will live"
+317,Ciudad diferente,Different city
+318,Nosotros viviremos en una ciudad diferente el próximo año,We will live in a different city next year
+319,Cambiar (futuro),"I will change, you will change, he/she will change, we will change, you will change, they will change"
+320,Estilo de vida,Lifestyle
+321,Él cambiará su estilo de vida por razones de salud,He will change his lifestyle for health reasons
+322,Mejorar (futuro),"I will improve, you will improve, he/she will improve, we will improve, you will improve, they will improve"
+323,Habilidades de comunicación,Communication skills
+324,Ella mejorará sus habilidades de comunicación,She will improve her communication skills
+325,Construir (futuro),"I will build, you will build, he/she will build, we will build, you will build, they will build"
+326,Equipo fuerte,Strong team
+327,Ellos construirán un equipo fuerte en la empresa,They will build a strong team in the company
+328,Desarrollar (futuro),"I will develop, you will develop, he/she will develop, we will develop, you will develop, they will develop"
+329,Aplicación móvil,Mobile application
+330,Yo desarrollaré una aplicación móvil innovadora,I will develop an innovative mobile application
+331,Investigar (futuro),"I will research, you will research, he/she will research, we will research, you will research, they will research"
+332,Tema importante,Important topic
+333,Nosotros investigaremos un tema importante para nuestra tesis,We will research an important topic for our thesis
+334,Presentar (futuro),"I will present, you will present, he/she will present, we will present, you will present, they will present"
+335,Resultados del proyecto,Project results
+336,Él presentará los resultados del proyecto en la reunión,He will present the project results at the meeting
+337,Organizar (futuro),"I will organize, you will organize, he/she will organize, we will organize, you will organize, they will organize"
+338,Evento benéfico,Charity event
+339,Ella organizará un evento benéfico para recaudar fondos,She will organize a charity event to raise funds
+340,Participar (futuro),"I will participate, you will participate, he/she will participate, we will participate, you will participate, they will participate"
+341,Competencia internacional,International competition
+342,Ellos participarán en una competencia internacional de debate,They will participate in an international debate competition
+343,Celebrar (futuro),"I will celebrate, you will celebrate, he/she will celebrate, we will celebrate, you will celebrate, they will celebrate"
+344,Aniversario de bodas,Wedding anniversary
+345,Yo celebraré mi aniversario de bodas en París,I will celebrate my wedding anniversary in Paris
+346,Planear (futuro),"I will plan, you will plan, he/she will plan, we will plan, you will plan, they will plan"
+347,Viaje de negocios,Business trip
+348,Nosotros planearemos cuidadosamente nuestro próximo viaje de negocios,We will carefully plan our next business trip
+349,Invertir (futuro),"I will invest, you will invest, he/she will invest, we will invest, you will invest, they will invest"
+350,Mercado de valores,Stock market
+351,Él invertirá en el mercado de valores por primera vez,He will invest in the stock market for the first time
+352,Ahorrar (futuro),"I will save, you will save, he/she will save, we will save, you will save, they will save"
+353,Dinero para la jubilación,Money for retirement
+354,Ella ahorrará más dinero para su jubilación,She will save more money for her retirement
+355,Expandir (futuro),"I will expand, you will expand, he/she will expand, we will expand, you will expand, they will expand"
+356,Negocio familiar,Family business
+357,Ellos expandirán su negocio familiar a otras ciudades,They will expand their family business to other cities
+358,Renovar (futuro),"I will renovate, you will renovate, he/she will renovate, we will renovate, you will renovate, they will renovate"
+359,Cocina antigua,Old kitchen
+360,Yo renovaré mi cocina antigua el próximo verano,I will renovate my old kitchen next summer
+361,Adoptar (futuro),"I will adopt, you will adopt, he/she will adopt, we will adopt, you will adopt, they will adopt"
+362,Perro de un refugio,Shelter dog
+363,Nosotros adoptaremos un perro de un refugio,We will adopt a dog from a shelter
+364,Donar (futuro),"I will donate, you will donate, he/she will donate, we will donate, you will donate, they will donate"
+365,Ropa usada,Used clothes
+366,Él donará su ropa usada a una organización benéfica,He will donate his used clothes to a charity organization
+367,Reciclar (futuro),"I will recycle, you will recycle, he/she will recycle, we will recycle, you will recycle, they will recycle"
+368,Materiales plásticos,Plastic materials
+369,Ella reciclará todos los materiales plásticos en su hogar,She will recycle all plastic materials in her home
+370,Plantar (futuro),"I will plant, you will plant, he/she will plant, we will plant, you will plant, they will plant"
+371,Árboles en el parque local,Trees in the local park
+372,Ellos plantarán árboles en el parque local como voluntarios,They will plant trees in the local park as volunteers
+373,Apoyar (futuro),"I will support, you will support, he/she will support, we will support, you will support, they will support"
+374,Causa ambiental,Environmental cause
+375,Yo apoyaré una causa ambiental importante,I will support an important environmental cause
+376,Crear (futuro),"I will create, you will create, he/she will create, we will create, you will create, they will create"
+377,Obra de arte única,Unique artwork
+378,Nosotros crearemos una obra de arte única para la exposición,We will create a unique artwork for the exhibition
+379,Dirigir (futuro),"I will direct, you will direct, he/she will direct, we will direct, you will direct, they will direct"
+380,Película independiente,Independent film
+381,Él dirigirá su primera película independiente,He will direct his first independent film
+382,Componer (futuro),"I will compose, you will compose, he/she will compose, we will compose, you will compose, they will compose"
+383,Canción original,Original song
+384,Ella compondrá una canción original para el concierto benéfico,She will compose an original song for the charity concert
+385,Publicar (futuro),"I will publish, you will publish, he/she will publish, we will publish, you will publish, they will publish"
+386,Artículo científico,Scientific article
+387,Ellos publicarán su artículo científico en una revista prestigiosa,They will publish their scientific article in a prestigious journal
+388,Lanzar (futuro),"I will launch, you will launch, he/she will launch, we will launch, you will launch, they will launch"
+389,Producto innovador,Innovative product
+390,Yo lanzaré un producto innovador en el mercado,I will launch an innovative product in the market
+391,Implementar (futuro),"I will implement, you will implement, he/she will implement, we will implement, you will implement, they will implement"
+392,Sistema de gestión,Management system
+393,Nosotros implementaremos un nuevo sistema de gestión en la empresa,We will implement a new management system in the company
+394,Actualizar (futuro),"I will update, you will update, he/she will update, we will update, you will update, they will update"
+395,Software obsoleto,Outdated software
+396,Él actualizará el software obsoleto en todos los computadores,He will update the outdated software on all computers
+397,Resolver (futuro),"I will solve, you will solve, he/she will solve, we will solve, you will solve, they will solve"
+398,Problema complejo,Complex problem
+399,Ella resolverá el problema complejo utilizando tecnología avanzada,She will solve the complex problem using advanced technology
+400,Analizar (futuro),"I will analyze, you will analyze, he/she will analyze, we will analyze, you will analyze, they will analyze"
+401,Datos del mercado,Market data
+402,Ellos analizarán los datos del mercado para tomar decisiones informadas,They will analyze market data to make informed decisions
+403,Colaborar (futuro),"I will collaborate, you will collaborate, he/she will collaborate, we will collaborate, you will collaborate, they will collaborate"
+404,Equipo internacional,International team
+405,Yo colaboraré con un equipo internacional en el próximo proyecto,I will collaborate with an international team on the next project
+406,Negociar (futuro),"I will negotiate, you will negotiate, he/she will negotiate, we will negotiate, you will negotiate, they will negotiate"
+407,Contrato importante,Important contract
+408,Nosotros negociaremos un contrato importante con nuestros socios comerciales,We will negotiate an important contract with our business partners
+409,Innovar (futuro),"I will innovate, you will innovate, he/she will innovate, we will innovate, you will innovate, they will innovate"
+410,Sector tecnológico,Technology sector
+411,Él innovará en el sector tecnológico con su nueva startup,He will innovate in the technology sector with his new startup
+412,Optimizar (futuro),"I will optimize, you will optimize, he/she will optimize, we will optimize, you will optimize, they will optimize"
+413,Procesos de producción,Production processes
+414,Ella optimizará los procesos de producción para aumentar la eficiencia,She will optimize production processes to increase efficiency
+415,Diversificar (futuro),"I will diversify, you will diversify, he/she will diversify, we will diversify, you will diversify, they will diversify"
+416,Cartera de inversiones,Investment portfolio
+417,Ellos diversificarán su cartera de inversiones para reducir riesgos,They will diversify their investment portfolio to reduce risks
+418,Anticipar (futuro),"I will anticipate, you will anticipate, he/she will anticipate, we will anticipate, you will anticipate, they will anticipate"
+419,Cambios en el mercado,Market changes
+420,Yo anticiparé los cambios en el mercado para mantener nuestra ventaja competitiva,I will anticipate market changes to maintain our competitive advantage
+421,Adaptar (futuro),"I will adapt, you will adapt, he/she will adapt, we will adapt, you will adapt, they will adapt"
+422,Nuevas tecnologías,New technologies
+423,Nosotros nos adaptaremos rápidamente a las nuevas tecnologías en nuestra industria,We will quickly adapt to new technologies in our industry
+424,Ejecutar (futuro),"I will execute, you will execute, he/she will execute, we will execute, you will execute, they will execute"
+425,Plan estratégico,Strategic plan
+426,Él ejecutará el plan estratégico con precisión y eficacia,He will execute the strategic plan with precision and effectiveness
+427,Supervisar (futuro),"I will supervise, you will supervise, he/she will supervise, we will supervise, you will supervise, they will supervise"
+428,Equipo de desarrollo,Development team
+429,Ella supervisará al equipo de desarrollo durante la fase crítica del proyecto,She will supervise the development team during the critical phase of the project
+430,Coordinar (futuro),"I will coordinate, you will coordinate, he/she will coordinate, we will coordinate, you will coordinate, they will coordinate"
+431,Esfuerzos de múltiples departamentos,Multi-department efforts
+432,Ellos coordinarán los esfuerzos de múltiples departamentos para lograr los objetivos de la empresa,They will coordinate multi-department efforts to achieve company goals
+433,Evaluar (futuro),"I will evaluate, you will evaluate, he/she will evaluate, we will evaluate, you will evaluate, they will evaluate"
+434,Impacto ambiental,Environmental impact
+435,Yo evaluaré el impacto ambiental de nuestras operaciones comerciales,I will evaluate the environmental impact of our business operations
+436,Fomentar (futuro),"I will foster, you will foster, he/she will foster, we will foster, you will foster, they will foster"
+437,Cultura de innovación,Culture of innovation
+438,Nosotros fomentaremos una cultura de innovación en toda la organización,We will foster a culture of innovation throughout the organization
+439,Priorizar (futuro),"I will prioritize, you will prioritize, he/she will prioritize, we will prioritize, you will prioritize, they will prioritize"
+440,Tareas críticas,Critical tasks
+441,Él priorizará las tareas críticas para cumplir con los plazos del proyecto,He will prioritize critical tasks to meet project deadlines
+442,Empoderar (futuro),"I will empower, you will empower, he/she will empower, we will empower, you will empower, they will empower"
+443,Empleados,Employees
+444,Ella empoderará a los empleados para que tomen decisiones importantes,She will empower employees to make important decisions
+445,Consolidar (futuro),"I will consolidate, you will consolidate, he/she will consolidate, we will consolidate, you will consolidate, they will consolidate"
+446,Operaciones globales,Global operations
+447,Ellos consolidarán sus operaciones globales para mejorar la eficiencia,They will consolidate their global operations to improve efficiency
+448,Revolucionar (futuro),"I will revolutionize, you will revolutionize, he/she will revolutionize, we will revolutionize, you will revolutionize, they will revolutionize"
+449,Industria de la moda,Fashion industry
+450,Yo revolucionaré la industria de la moda con diseños sostenibles,I will revolutionize the fashion industry with sustainable designs
+451,Transformar (futuro),"I will transform, you will transform, he/she will transform, we will transform, you will transform, they will transform"
+452,Modelo de negocio,Business model
+453,Nosotros transformaremos nuestro modelo de negocio para adaptarnos a la economía digital,We will transform our business model to adapt to the digital economy
+454,Liderar (futuro),"I will lead, you will lead, he/she will lead, we will lead, you will lead, they will lead"
+455,Iniciativa de sostenibilidad,Sustainability initiative
+456,Él liderará una importante iniciativa de sostenibilidad en la industria,He will lead a major sustainability initiative in the industry
+457,Redefinir (futuro),"I will redefine, you will redefine, he/she will redefine, we will redefine, you will redefine, they will redefine"
+458,Estándares de calidad,Quality standards
+459,Ella redefinirá los estándares de calidad en nuestra línea de productos,She will redefine quality standards in our product line
+460,Influenciar (futuro),"I will influence, you will influence, he/she will influence, we will influence, you will influence, they will influence"
+461,Políticas públicas,Public policies
+462,Ellos influenciarán las políticas públicas a través de su investigación,They will influence public policies through their research
+463,Maximizar (futuro),"I will maximize, you will maximize, he/she will maximize, we will maximize, you will maximize, they will maximize"
+464,Retorno de inversión,Return on investment
+465,Yo maximizaré el retorno de inversión implementando estrategias innovadoras,I will maximize the return on investment by implementing innovative strategies
+466,Minimizar (futuro),"I will minimize, you will minimize, he/she will minimize, we will minimize, you will minimize, they will minimize"
+467,Impacto negativo,Negative impact
+468,Nosotros minimizaremos el impacto negativo de nuestras operaciones en el medio ambiente,We will minimize the negative impact of our operations on the environment
+469,Proponer (futuro),"I will propose, you will propose, he/she will propose, we will propose, you will propose, they will propose"
+470,Solución innovadora,Innovative solution
+471,Él propondrá una solución innovadora para abordar el problema de la escasez de agua,He will propose an innovative solution to address the water scarcity problem
+472,Generar (futuro),"I will generate, you will generate, he/she will generate, we will generate, you will generate, they will generate"
+473,Energía renovable,Renewable energy
+474,Ella generará energía renovable utilizando tecnología de punta,She will generate renewable energy using cutting-edge technology
+475,Promocionar (futuro),"I will promote, you will promote, he/she will promote, we will promote, you will promote, they will promote"
+476,Campaña de marketing,Marketing campaign
+477,Ellos promocionarán el nuevo producto a través de una campaña de marketing innovadora,They will promote the new product through an innovative marketing campaign
+478,Debatir (futuro),"I will debate, you will debate, he/she will debate, we will debate, you will debate, they will debate"
+479,Temas controversiales,Controversial topics
+480,Yo debatiré temas controversiales en el próximo foro político,I will debate controversial topics in the upcoming political forum
+481,Mediar (futuro),"I will mediate, you will mediate, he/she will mediate, we will mediate, you will mediate, they will mediate"
+482,Conflicto laboral,Labor dispute
+483,Nosotros mediaremos en el conflicto laboral entre la empresa y el sindicato,We will mediate in the labor dispute between the company and the union
+484,Arbitrar (futuro),"I will arbitrate, you will arbitrate, he/she will arbitrate, we will arbitrate, you will arbitrate, they will arbitrate"
+485,Disputa comercial,Commercial dispute
+486,Él arbitrará en la disputa comercial entre las dos corporaciones,He will arbitrate in the commercial dispute between the two corporations
+487,Conciliar (futuro),"I will reconcile, you will reconcile, he/she will reconcile, we will reconcile, you will reconcile, they will reconcile"
+488,Diferencias culturales,Cultural differences
+489,Ella conciliará las diferencias culturales en el equipo internacional,She will reconcile cultural differences in the international team
+490,Sintetizar (futuro),"I will synthesize, you will synthesize, he/she will synthesize, we will synthesize, you will synthesize, they will synthesize"
+491,Información compleja,Complex information
+492,Ellos sintetizarán la información compleja en un informe conciso,They will synthesize complex information into a concise report
+493,Conceptualizar (futuro),"I will conceptualize, you will conceptualize, he/she will conceptualize, we will conceptualize, you will conceptualize, they will conceptualize"
+494,Proyecto innovador,Innovative project
+495,Yo conceptualizaré un proyecto innovador para mejorar la educación en áreas rurales,I will conceptualize an innovative project to improve education in rural areas
+496,Abstraer (futuro),"I will abstract, you will abstract, he/she will abstract, we will abstract, you will abstract, they will abstract"
+497,Principios fundamentales,Fundamental principles
+498,Nosotros abstraeremos los principios fundamentales de los datos recopilados,We will abstract the fundamental principles from the collected data
+499,Teorizar (futuro),"I will theorize, you will theorize, he/she will theorize, we will theorize, you will theorize, they will theorize"
+500,Origen del universo,Origin of the universe
+501,Él teorizará sobre el origen del universo basándose en nuevos descubrimientos,He will theorize about the origin of the universe based on new discoveries
+502,Postular (futuro),"I will postulate, you will postulate, he/she will postulate, we will postulate, you will postulate, they will postulate"
+503,Nueva hipótesis,New hypothesis
+504,Ella postulará una nueva hipótesis sobre el funcionamiento de la memoria humana,She will postulate a new hypothesis about how human memory works
+505,Deducir (futuro),"I will deduce, you will deduce, he/she will deduce, we will deduce, you will deduce, they will deduce"
+506,Conclusiones lógicas,Logical conclusions
+507,Ellos deducirán conclusiones lógicas basadas en la evidencia disponible,They will deduce logical conclusions based on the available evidence
+508,Inducir (futuro),"I will induce, you will induce, he/she will induce, we will induce, you will induce, they will induce"
+509,Patrón general,General pattern
+510,Yo induciré un patrón general a partir de los casos observados,I will induce a general pattern from the observed cases
+511,Inferir (futuro),"I will infer, you will infer, he/she will infer, we will infer, you will infer, they will infer"
+512,Motivaciones subyacentes,Underlying motivations
+513,Nosotros inferiremos las motivaciones subyacentes del comportamiento del consumidor,We will infer the underlying motivations of consumer behavior
+514,Extrapolar (futuro),"I will extrapolate, you will extrapolate, he/she will extrapolate, we will extrapolate, you will extrapolate, they will extrapolate"
+515,Tendencias futuras,Future trends
+516,Él extrapolará las tendencias futuras del mercado basándose en datos históricos,He will extrapolate future market trends based on historical data
+517,Correlacionar (futuro),"I will correlate, you will correlate, he/she will correlate, we will correlate, you will correlate, they will correlate"
+518,Variables económicas,Economic variables
+519,Ella correlacionará diferentes variables económicas para identificar patrones,She will correlate different economic variables to identify patterns
+520,Diagnosticar (futuro),"I will diagnose, you will diagnose, he/she will diagnose, we will diagnose, you will diagnose, they will diagnose"
+521,Problema sistémico,Systemic problem
+522,Ellos diagnosticarán el problema sistémico en la organización,They will diagnose the systemic problem in the organization
+523,Pronosticar (futuro),"I will forecast, you will forecast, he/she will forecast, we will forecast, you will forecast, they will forecast"
+524,Condiciones económicas,Economic conditions
+525,Yo pronosticaré las condiciones económicas para el próximo año fiscal,I will forecast economic conditions for the next fiscal year
+526,Simular (futuro),"I will simulate, you will simulate, he/she will simulate, we will simulate, you will simulate, they will simulate"
+527,Escenarios de crisis,Crisis scenarios
+528,Nosotros simularemos varios escenarios de crisis para preparar a la empresa,We will simulate various crisis scenarios to prepare the company
+529,Modelar (futuro),"I will model, you will model, he/she will model, we will model, you will model, they will model"
+530,Comportamiento del mercado,Market behavior
