@@ -1,17 +1,15 @@
 from functions import *
 from tqdm import tqdm
 
-instruction=f"""
-    CREATE TABLE es_to_en_history_user_1 (
-        word_id integer(5) not null, 
-        box_level integer(5) not null,
-        ts datetime not null,
-        PRIMARY KEY(word_id, ts)
-    )"""
+instructions='''
+CREATE TABLE fr_to_es_users (
+    user_id INT PRIMARY KEY,
+    user_name VARCHAR(100)
+);'''
 
-df=pd.read_csv('Data/english-learning.csv')
-df['rank']=df.index.astype(int)+1
-df.to_csv('Data/english-learning.csv',index=False,header=True)
-
-
+instructions='''
+INSERT INTO fr_to_es_users (user_id, user_name) VALUES
+(1, 'Sophie')
+'''
+run(instructions)
 

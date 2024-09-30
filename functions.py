@@ -100,7 +100,7 @@ def do_update(box_level):
       'ts':[ts]
     })
     st.session_state.to_append={
-        'table_name':f'es_to_en_history_user_{st.session_state.user_id}',
+        'table_name':f'fr_to_es_history_user_{st.session_state.user_id}',
         'df':new_df
     }
     st.session_state.df_box=pd.concat([st.session_state.df_box,new_df]).copy()
