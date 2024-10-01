@@ -13,7 +13,7 @@ if 'user' not in st.session_state:
     df_progress=pd.DataFrame(dict_progress).T.rename(columns={0:'score'}).sort_values('score',ascending=False)
     st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
     st.markdown(f"<text class='big-font'>Bravo à <b class='big-font'>{df_progress.index[0]}!!</b></text>", unsafe_allow_html=True)
-    st.bar_chart(df_progress, width=1)
+    st.bar_chart(df_progress)
     
 
     user_df=get_data('select * from fr_to_es_users')
