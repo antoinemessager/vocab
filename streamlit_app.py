@@ -7,15 +7,7 @@ if 'user' not in st.session_state:
     user_list=['please select']+user_df.user_name.unique().tolist()+['new']
     user_name=st.selectbox('Who are you?',user_list)
     
-    dict_progress={}
-    df_user=get_data(f"select * from fr_to_es_users")
-    for i in range(df_user.shape[0]):
-      user_id=df_user.user_id.values[i]
-      user_name=df_user.user_name.values[i]
-      df_history=get_data(f'select * from fr_to_es_history_user_{user_id}')
-      dict_progress[user_name]=[df_history.sort_values('ts').groupby('word_id').tail(1).box_level.sum()/6]
-    df_progress=pd.DataFrame(dict_progress)
-    df_progress
+    
     if user_name != 'please select':
       if user_name == 'new':
         new_user_name=st.text_input('Write down your name').lower()
