@@ -3,6 +3,18 @@ from functions import *
 st_theme = st_javascript("""window.getComputedStyle(window.parent.document.getElementsByClassName("stApp")[0]).getPropertyValue("color-scheme")""")
 
 if 'user' not in st.session_state:
+    dict_progress={}
+    df_user=get_data(f"select * from fr_to_es_users")
+    for i in range(df_user.shape[0]):
+      user_id=df_user.user_id.values[i]
+      user_name=df_user.user_name.values[i]
+      df_history=get_data(f'select * from fr_to_es_history_user_{user_id}')
+      dict_progress[user_name]=[df_history.sort_values('ts').groupby('word_id').tail(1).box_level.sum()/6]
+    df_progress=pd.DataFrame(dict_progress).T.rename(columns={0:'score'}).sort_values('score',ascending=False)
+    st.markdown(f"<text class='big-font'>Bravo à {df_progress.index[0]}!!</text>", unsafe_allow_html=True)
+    st.bar_chart(df_progress, width=1)
+    
+
     user_df=get_data('select * from fr_to_es_users')
     user_list=['please select']+user_df.user_name.unique().tolist()+['new']
     user_name=st.selectbox('Who are you?',user_list)
