@@ -11,7 +11,8 @@ if 'user' not in st.session_state:
       df_history=get_data(f'select * from fr_to_es_history_user_{user_id}')
       dict_progress[user_name]=[df_history.sort_values('ts').groupby('word_id').tail(1).box_level.sum()/6]
     df_progress=pd.DataFrame(dict_progress).T.rename(columns={0:'score'}).sort_values('score',ascending=False)
-    st.markdown(f"<text class='big-font'>Bravo à {df_progress.index[0]}!!</text>", unsafe_allow_html=True)
+    st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
+    st.markdown(f"<text class='big-font'>Bravo à <b class='big-font'>{df_progress.index[0]}!!</b></text>", unsafe_allow_html=True)
     st.bar_chart(df_progress, width=1)
     
 
