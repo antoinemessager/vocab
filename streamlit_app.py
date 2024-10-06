@@ -111,10 +111,25 @@ else:
   </style>
   """,unsafe_allow_html=True,)
   col1, col2 = st.columns(2) 
+
   with col1:
+    st.write('''<style>
+    [data-testid="column"] {
+        width: calc(50% - 1rem) !important;
+        flex: 1 1 calc(50% - 1rem) !important;
+        min-width: calc(50% - 1rem) !important;
+    }
+    </style>''', unsafe_allow_html=True)
     st.button(label='unknown',on_click=unknown)
     st.button(label='too easy',on_click=too_easy)
   with col2:
+    st.write('''<style>
+    [data-testid="column"] {
+        width: calc(50% - 1rem) !important;
+        flex: 1 1 calc(50% - 1rem) !important;
+        min-width: calc(50% - 1rem) !important;
+    }
+    </style>''', unsafe_allow_html=True)
     st.button(label='known',on_click=known)
     st.button(label='reveal',on_click=reveal)
     
