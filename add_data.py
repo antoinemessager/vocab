@@ -1,7 +1,7 @@
 from functions import *
 from tqdm import tqdm
 
-df=pd.read_csv('Data/data.csv')
+df=pd.read_csv('Data/data2.csv')
 instructions="""CREATE TABLE IF NOT EXISTS fr_to_es_data (
     word_id INT AUTO_INCREMENT PRIMARY KEY,
     word_fr VARCHAR(255) NOT NULL,

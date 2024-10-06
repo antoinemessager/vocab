@@ -3,3 +3,4 @@ datetime
 pandas
 numpy
 streamlit_javascript
+cryptography
