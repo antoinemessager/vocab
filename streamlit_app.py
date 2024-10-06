@@ -99,16 +99,17 @@ else:
   st.markdown(f"<text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
   
   st.markdown("""
-    <style>
-        div[data-testid="column"] {
-            width: fit-content !important;
-            flex: unset;
-        }
-        div[data-testid="column"] * {
-            width: fit-content !important;
-        }
-    </style>
-    """, unsafe_allow_html=True)
+  <style>
+  button {
+      height: auto;
+      width: 73px !important;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      padding-left: 1px !important;
+      padding-right: 1px !important;
+  }
+  </style>
+  """,unsafe_allow_html=True,)
   col1, col2 = st.columns(2) 
   with col1:
     st.button(label='unknown',on_click=unknown)
