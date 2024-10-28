@@ -3,7 +3,7 @@ from functions import *
 st_theme = st_javascript("""window.getComputedStyle(window.parent.document.getElementsByClassName("stApp")[0]).getPropertyValue("color-scheme")""")
 
 if 'user' not in st.session_state:
-    user_df=get_data('select * from es_to_en_users')
+    user_df=get_data('select * from users')
     user_list=['please select']+user_df.user_name.unique().tolist()+['new']
     user_name=st.selectbox('Who are you?',user_list)
     if user_name != 'please select':
@@ -15,10 +15,10 @@ if 'user' not in st.session_state:
           st.session_state.user=new_user_name
           user_id=user_df.shape[0]+1
           st.session_state.user_id=user_id
-          run(f"INSERT INTO es_to_en_users (user_id, user_name) VALUES ({user_id}, '{new_user_name}')")
-          run(f'drop table if exists es_to_en_history_user_{user_id}')
+          run(f"INSERT INTO users (user_id, user_name) VALUES ({user_id}, '{new_user_name}')")
+          run(f'drop table if exists history_user_{user_id}')
           run(f"""
-          CREATE TABLE es_to_en_history_user_{user_id} (
+          CREATE TABLE history_user_{user_id} (
               word_id integer(5) not null, 
               box_level integer(5) not null,
               ts datetime not null,
@@ -27,7 +27,7 @@ if 'user' not in st.session_state:
           st.rerun()
       else:
         st.session_state.user=user_name
-        user_id=get_data(f"select user_id from es_to_en_users where user_name='{user_name}'").user_id.values[0]
+        user_id=get_data(f"select user_id from users where user_name='{user_name}'").user_id.values[0]
         st.session_state.user_id=user_id
         st.rerun()
 else:
@@ -39,8 +39,8 @@ else:
 
   if 'df_words' not in st.session_state:
     st.write(f'Hello {user_name}! Loading data...')
-    st.session_state.df_words=get_data('select * from es_to_en_data')
-    st.session_state.df_box=get_data(f'select * from es_to_en_history_user_{user_id}')
+    st.session_state.df_words=get_data('select * from es_fr_words')
+    st.session_state.df_box=get_data(f'select * from history_user_{user_id}')
     st.rerun()
 
   df_words=st.session_state.df_words.copy()
@@ -60,7 +60,7 @@ else:
       df_box=pd.concat([df_box,df_new_box])
       df_current_box=df_box.sort_values('ts').groupby('word_id').tail(1).reset_index(drop=True)
       st.session_state.df_box=df_box.copy()
-      append_dataframe_to_mysql(df_new_box,f'es_to_en_history_user_{user_id}')
+      append_dataframe_to_mysql(df_new_box,f'history_user_{user_id}')
 
     df_current_box['dt']=df_current_box['box_level'].map(dict_level_to_dt_sec)
     df_current_box['min_ts']=pd.to_datetime(pd.to_datetime(df_current_box['ts']).astype(int).div(1e9)+df_current_box['dt'],unit='s')
@@ -74,11 +74,13 @@ else:
 
   
   word_id=st.session_state.word_id
-  sentence_es=df_words[df_words.word_id==word_id].word_es.values[0]
-  sentence_en=df_words[df_words.word_id==word_id].word_en.values[0]
+  word_fr=df_words[df_words.word_id==word_id].fr_word.values[0]
+  sentence_fr=df_words[df_words.word_id==word_id].fr_sentence.values[0]
+  word_es=df_words[df_words.word_id==word_id].es_word.values[0]
+  sentence_es=df_words[df_words.word_id==word_id].es_sentence.values[0]
 
   st.markdown("""<style>.big-font {font-size:30px;}</style>""", unsafe_allow_html=True)
-  st.markdown(f"<text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
+  st.markdown(f"<b class='big-font'>[{word_fr}] </b><text class='big-font'>{sentence_fr}</text>", unsafe_allow_html=True)
   
   col1, col2 = st.columns(2) 
   with col1:
@@ -103,18 +105,18 @@ else:
     st.button(label='reveal',on_click=reveal)
     
   if st.session_state.reveal:
-    st.markdown(f"<text class='big-font'>{sentence_en}</text>", unsafe_allow_html=True)
+    st.markdown(f"<b class='big-font'>[{word_es}] </b><text class='big-font'>{sentence_es}</text>", unsafe_allow_html=True)
   else:
     if st_theme == 'light':
       st.markdown("""<style>.big-white-font {font-size:30px;color:white}</style>""", unsafe_allow_html=True)
     if st_theme == 'dark':
       st.markdown("""<style>.big-white-font {font-size:30px;color:#0e1117}</style>""", unsafe_allow_html=True)
-    st.markdown(f"<text class='big-white-font'>{sentence_en}</text>", unsafe_allow_html=True)
+    st.markdown(f"<b class='big-white-font'>[{word_es}] </b><text class='big-white-font'>{sentence_es}</text>", unsafe_allow_html=True)
 
 
   nb_word_learning=df_current_box.box_level.sum()/6
-  progress=int(nb_word_learning/231*100)
-  progress_text = f"learned {nb_word_learning:.1f} words out of 231"
+  progress=int(nb_word_learning/4999*100)
+  progress_text = f"learned {nb_word_learning:.1f} words out of 4999"
   my_bar = st.progress(progress,text=progress_text)
 
   if 'to_append' in st.session_state:
