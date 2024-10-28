@@ -4,7 +4,7 @@ st_theme = st_javascript("""window.getComputedStyle(window.parent.document.getEl
 
 if True:
   
-  col1, col2 = st.columns(2) 
+  col1, col2, col3 = st.columns(3) 
   with col1:
     st.write('''<style>
     [data-testid="column"] {
