@@ -13,8 +13,8 @@ if True:
         min-width: calc(33% - 1rem) !important;
     }
     </style>''', unsafe_allow_html=True)
-    st.button(label='unknown')
-    st.button(label='too easy')
+    st.button(label='unk')
+    st.button(label='too')
   with col2:
     st.write('''<style>
     [data-testid="column"] {
@@ -23,5 +23,5 @@ if True:
         min-width: calc(33% - 1rem) !important;
     }
     </style>''', unsafe_allow_html=True)
-    st.button(label='known')
-    st.button(label='reveal')
+    st.button(label='kno')
+    st.button(label='rev')
