@@ -2,7 +2,7 @@ from functions import *
 
 st_theme = st_javascript("""window.getComputedStyle(window.parent.document.getElementsByClassName("stApp")[0]).getPropertyValue("color-scheme")""")
 
-
+if True:
   
   col1, col2 = st.columns(2) 
   with col1:
